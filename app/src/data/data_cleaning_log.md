@@ -37,3 +37,12 @@
 ### Steps Executed:
 
 1. **[Correction]** Corrected information in [song_name], [artist_name], and [primary_feeling] columns for rows 31-60.
+
+## [2026-6-10] - [Matthew McAlarney - Web Developer, Data Developer]
+
+- **Target File:** `music_preference_survey_data_master_cleaned.csv` -> `music_preference_survey_data_master_cleaned.csv`
+- **Purpose:** [Information Correction]
+
+### Steps Executed:
+
+1. **[Correction]** Corrected information in [song_name], [artist_name], and [primary_feeling] columns for rows 61-112.
