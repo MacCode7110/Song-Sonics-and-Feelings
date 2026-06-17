@@ -10,8 +10,8 @@ As music_preference_survey_data_master_cleaned is a small dataset and contains o
 ### Steps Executed:
 
 1. **[Removal]** Deleted 16 columns resulting in remaining columns [song_name], [artist_name], [primary_feeling].
-2. **[Correction]** Standardized all null values to display NA.
-3. **[Removal]** Deleted 7 rows containing all NA values.
+2. **[Correction]** Standardized 22 null values to display NA.
+3. **[Removal]** Deleted 7 rows each containing all NA values.
 
 ## [2026-6-16] - [Matthew McAlarney - Web Developer, Data Researcher]
 
