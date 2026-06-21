@@ -23,7 +23,7 @@ As music_preference_survey_data_master_cleaned is a small dataset and contains o
 ## [2026-6-20 - V2] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preference_survey_data_master_cleaned_v1.csv` -> `music_preference_survey_data_master_cleaned_v2.csv`
-- **Data Shape Change:** 269 rows * 3 columns -> 
+- **Data Shape Change:** 269 rows * 3 columns -> 262 rows * 3 columns
 - **Purpose:** [Complete Quality Sweep - Manual Context Review]
 
 ### Steps Executed:
