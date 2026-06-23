@@ -37,12 +37,12 @@ To guarantee a reliable and accurate procedure for sonic feature extraction thro
 - **Data Shape Change:** 269 rows * 3 columns -> _ rows * 3 columns
 - **Purpose:** [Dataset Truncation (Chronological Slicing) - Manual Context Review]
 - **Initial Raw Submissions:** 275 total survey responses
-- **Methodology:** To maintain an efficient manual data-cleaning workflow and prevent arbitrary selection bias, a Chronological Slicing (First-Come, First-Served) method was applied. The first 85 consecutive survey responses were selected maintaining the original chronological submission order. All subsequent 190 survey responses were excluded from this phase of analysis.
+- **Methodology:** To maintain an efficient manual data-cleaning workflow and prevent arbitrary selection bias, a Chronological Slicing (First-Come, First-Served) method was applied. The first 85 consecutive survey responses were selected, maintaining the original chronological submission order. All subsequent 190 survey responses were excluded from this phase of analysis.
 - **Resulting Batch Size:** 85 rows
 
 ### Steps Executed:
 
-1. **[Removal]** Deleted all subsequent 190 survey responses submitted after the first 85 consecutive survey responses according to original chronological submission order.
+1. **[Removal]** Deleted all subsequent 190 survey responses submitted after the first 85 consecutive survey responses according to the original chronological submission order.
 
 ## [2026-6-22 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
 
