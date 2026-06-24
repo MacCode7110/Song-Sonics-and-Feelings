@@ -1,20 +1,19 @@
 from pathlib import Path
 import pandas as pd
-import os
 
-# Find the directory of the current program
+# Find the exact directory of the current program
 program_dir = Path(__file__).parent
 
 # Declare the input and output CSV file paths
 input_csv = "../csv_file/music_preference_survey_data_master_cleaned_v1.csv"
 output_csv = "../csv_file/music_preference_survey_data_master_cleaned_v2.csv"
 
-# Join the program directory with input_csv
-input_csv_path = program_dir / input_csv
+# Join the exact directory with input_csv
+input_csv_path = program_dir/input_csv
 
 # Safely jump one level up and navigate into the csv_file directory
-output_directory = program_dir.parent / "csv_file"
-output_csv_path = output_directory / output_csv
+output_directory = program_dir.parent/"csv_file"
+output_csv_path = output_directory/output_csv
 
 # Read the CSV file into a DataFrame
 df = pd.read_csv(input_csv_path)
