@@ -31,7 +31,7 @@ Details to understand data correction rules:
     3. Correct primary feeling data when there is an obvious formal equivalent:
         Example: Changing a primary feeling field from "Fire" to "Energized".
 
-To guarantee a reliable and accurate procedure for sonic feature extraction throughout all songs, the PCA Plot requires official and original releases of all songs.
+To guarantee a robust procedure for sonic feature extraction throughout all songs, official and original song releases are obtained. The PCA Plot presents accurate sonic representations of all songs and fair comparisons.
 
 ## [2026-6-22 - V1] - [Matthew McAlarney - Web Developer, Data Researcher]
 
