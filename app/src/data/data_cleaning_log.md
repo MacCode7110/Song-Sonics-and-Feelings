@@ -10,30 +10,28 @@ As music_preference_survey_data_master_raw is a small dataset and contains open-
 
 ## Music Release Concepts
 
-    1. An official release of a song is an Audio Object in Youtube Music, which is different from a Music Video Object in Youtube Music.
-    
-    2. An original release of a song is the single release or first standard recording LP release containing the song.
-    
-    3. If a single was released before the first standard recording LP release containing the song, the single release is the original release of the song.
-    
-    4. If a single was released after the first standard recording LP release containing the song, then the first standard recording LP release is the original release of the song.
-    
-    5. If no single was released, then the first standard recording LP release containing the song is the original release of the song.
+    1. An official release of a song is an Audio Object in Youtube Music, which is different from a Music Video Object in Youtube Music. A song is officially released as a single, within a standard recording EP, or within a standard recording LP. A song is not officially released as a music video.
 
-    6. There is some probability that the single release of a song is sonically different compared to the song featured in any standard recording EP release, and any standard recording LP release.
+    2. There is some probability that the single release of a song is sonically different compared to the song featured in any standard recording EP release, and any standard recording LP release.
 
-    7. There is some probability that the standard recording EP release of a song is sonically different compared to the song featured in any standard recording LP release, and in any single release.
-    
-    8. Later pressings of an original standard recording LP release that are renamed qualify as the original standard recording LP.
+    3. There is some probability that the standard recording EP release of a song is sonically different compared to the song featured in any standard recording LP release, and in any single release.
 
-    9. Later pressings of an original standard recording EP release that are renamed qualify as the original standard recording EP.
+    4. There is some probability that the standard recording LP release of a song is sonically different compared to the song featured in any standard recording EP release, and in any single release.
     
-    10. Later pressings of an original single release that are renamed qualify as the original single.
+    5. An original release of a song is the type of release where the song is first available. A song is first available as a single release, within a standard recording EP release, or within a standard recording LP release. An original release of a song achieves condition a and may achieve condition b:
+        a. The song release is not an official remaster, remix, acoustic, unplugged, live, or cover release.
+        b. The song release contains sonic differences compared to the song featured in alternative release types.
+    
+    6. Later pressings of an original standard recording LP release that are renamed qualify as the original standard recording LP.
+
+    7. Later pressings of an original standard recording EP release that are renamed qualify as the original standard recording EP.
+    
+    8. Later pressings of an original single release that are renamed qualify as the original single.
 
 ## Data Correction Rules
 
     1. Correct song, artist, and primary feeling data when there is an obvious formatting issue:
-        Example: Changing a song with a leading space, " 7 Words" to a song without a leading space, "7 Words".
+        Example: Changing a song field with a leading space, " 7 Words" to a song field without a leading space, "7 Words".
     
     2. Correct song, artist, and primary feeling data when there is an obvious logical issue:
         Example: Changing an artist field from “DeFTONes” to “Deftones”.
@@ -44,11 +42,11 @@ As music_preference_survey_data_master_raw is a small dataset and contains open-
 
 ## Song Identification Method
 
-To guarantee a fair procedure for sonic feature extraction throughout all songs, only official song releases from standard recording LPs, standard recording EPs, and singles are obtained. The PCA Plot presents unique sonic representations of each song.
+To guarantee a fair procedure for sonic feature extraction throughout all songs, only official song releases from standard recording LPs, standard recording EPs, and singles are obtained. The PCA Plot presents unique sonic representations of each selected song.
 
 ## Pipeline Limitations
 
-1. The yt-dlp Python library is utilized to download and extract the highest quality available compressed audio from Youtube Music. Then, yt-dlp uses FFmpeg to transform the compressed audio into an uncompressed WAV file. There is some probability that the subset of selected songs are associated with WAV files containing different levels of audio quality and distortion. As a result, data clustering in the PCA Plot may partially reflect musical qualities that do not accurately characterize the sonic makeup of certain songs.
+1. The yt-dlp Python library is utilized to download and extract the highest quality available compressed audio from Youtube Music. Then, yt-dlp uses FFmpeg to transform the compressed audio into an uncompressed WAV file. There is some probability that the subset of selected songs are associated with WAV files containing different levels of audio quality and distortion. As a result, data clustering in the PCA Plot may partially reflect musical qualities that do not accurately characterize the original sonic makeup of certain songs.
 
 2. By utilizing untampered song files through various release types (singles, standard recording EPs, and standard recording LPs), the Essentia sonic feature extraction process introduces a systematic production bias. Since singles, standard recording EPs, and standard recording LPs frequently undergo differing mastering processes and structural alterations, the resulting Essentia sonic features represent differences in commercial audio engineering as well as the musical qualities of the songs. Consequently, data clustering in the PCA Plot may partially group songs based on release type rather than similar musical and structural aspects.
 
@@ -99,10 +97,10 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
     c. [Removal] _ rows deleted because the submitted song and artist information is connected to insufficient data in Youtube Music. Insufficient data in Youtube Music achieves one of the succeeding conditions:
         
-        I. The song was officially and originally released within a standard recording LP, and the official and original standard recording LP release containing the song is not in Youtube Music. Any alternative official standard recording EP release containing the song is not in Youtube Music, and any alternative official single release is not in Youtube Music.
+        I. The song was officially and originally released within a standard recording LP, and the official and original standard recording LP release containing the song is not in Youtube Music. Any alternative official standard recording EP release containing the official song is not in Youtube Music, and any alternative official single release is not in Youtube Music.
 
-        II. The song was officially and originally released within a standard recording EP, and the official and original standard recording EP release containing the song is not in Youtube Music. Any alternative official standard recording LP release containing the song is not in Youtube Music, and any alternative official single release is not in Youtube Music.
+        II. The song was officially and originally released within a standard recording EP, and the official and original standard recording EP release containing the song is not in Youtube Music. Any alternative official standard recording LP release containing the official song is not in Youtube Music, and any alternative official single release is not in Youtube Music.
         
-        III. The song was officially and originally released as a single, and the official and original single release is not in Youtube Music. Any alternative official standard recording EP release containing the song is not in Youtube Music, and any alternative official standard recording LP release containing the song is not in Youtube Music.
+        III. The song was officially and originally released as a single, and the official and original single release is not in Youtube Music. Any alternative official standard recording EP release containing the official song is not in Youtube Music, and any alternative official standard recording LP release containing the official song is not in Youtube Music.
 
     d. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for _ remaining rows in the sequence.
