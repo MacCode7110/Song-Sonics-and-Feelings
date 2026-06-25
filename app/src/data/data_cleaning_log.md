@@ -79,7 +79,7 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 ## [2026-6-22 - V1] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preference_survey_data_master_raw.csv` -> `music_preference_survey_data_master_cleaned_v1.csv`
-- **Data Shape Change:** 277 rows (2 header rows + 275 data rows) _ 19 columns -> 269 (1 header row + 268 data rows) rows _ 3 columns
+- **Data Shape Change:** 277 rows (2 header rows + 275 data rows) * 19 columns -> 269 (1 header row + 268 data rows) rows * 3 columns
 - **Purpose:** [Initial Quality Sweep - Manual Context Review, Establish Structural Baseline]
 
 ### Steps Executed:
@@ -95,7 +95,7 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 ## [2026-6-25 - V2] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preference_survey_data_master_cleaned_v1.csv` -> `music_preference_survey_data_master_cleaned_v2.csv`
-- **Data Shape Change:** 269 (1 header row + 268 data rows) rows _ 3 columns -> 86 (1 header row + 85 data rows) rows _ 3 columns
+- **Data Shape Change:** 269 (1 header row + 268 data rows) rows * 3 columns -> 86 (1 header row + 85 data rows) rows * 3 columns
 - **Purpose:** [Dataset Truncation (Simple Random Sampling) - Python Program Execution, Select Representative Subset of Dataset]
 - **Initial Raw Submissions:** 275 total survey responses
 - **Methodology:** To maintain an efficient data cleaning workflow and provide an unbiased, representative subset of the whole full-time employee respondent pool, a Simple Random Sampling method was applied. Using the simple_random_sampling.py Python program with a constant random seed (random_state=85) to enforce reproducibility, 85 unique survey responses were randomly selected from the 268 data rows. All non-selected responses were omitted from this phase of analysis.
@@ -108,7 +108,7 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 ## [2026-6-25 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preference_survey_data_master_cleaned_v2.csv` -> `music_preference_survey_data_master_cleaned_v3.csv`
-- **Data Shape Change:** 86 (1 header row + 85 data rows) rows _ 3 columns -> \_ rows _ 3 columns
+- **Data Shape Change:** 86 (1 header row + 85 data rows) rows * 3 columns -> _ rows * 3 columns
 - **Purpose:** [Complete Quality Sweep - Manual Context Review, Remove Invalid Data and Systematically Correct Information]
 
 ### Steps Executed:
@@ -119,9 +119,9 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
      I. An official and original song release by the submitted artist.
      II. A valid and formal primary feeling.
 
-     b. [Removal] \_ rows deleted because the submitted song and artist information is a duplication of song and artist information previously corrected in the Complete Quality Sweep.
+     b. [Removal] _ rows deleted because the submitted song and artist information is a duplication of song and artist information previously corrected in the Complete Quality Sweep.
 
-     c. [Removal] \_ rows deleted because the submitted song and artist information is connected to insufficient data in Youtube Music. Insufficient data in Youtube Music achieves one of the succeeding conditions:
+     c. [Removal] _ rows deleted because the submitted song and artist information is connected to insufficient data in Youtube Music. Insufficient data in Youtube Music achieves one of the succeeding conditions:
 
          I. The song was officially and originally released within a standard recording LP, and the official and original standard recording LP release containing the song is not in Youtube Music. Any alternative official standard recording EP release containing the official song is not in Youtube Music, and any alternative official single release is not in Youtube Music.
 
