@@ -15,16 +15,23 @@ As music_preference_survey_data_master_raw is a small dataset and contains open-
             I. Single: Usually consists of 1–3 songs with a focus on a lead promotional song.
             II. Standard Recording EP (Extended Play): Usually consists of 4–6 songs and is longer than a single.
             III. Standard Recording LP (Long Play): A full-length presentation of songs, which usually consists of at least 7 songs.
+            IV. Maxi-Single: A specific collection frequently utilized in Dance, Electronic, and Hip Hop music that contains a lead single and an array of remixe recordings, instrumental recordings, and B-sides.
+            V. Double LP: A collection consisting of a pair of distinct volumes released within the same product. This is also a subset of the standard recording LP release type.
         b. Specialized Audio Editions and Re-release Formats:
             I. Deluxe: An extended reissue of an existing standard recording LP containing bonus songs, demo songs, and/or b-side songs.
             II. Remastered: A song that is sonically optimized through contemporary technology, which usually encompasses increasing volume and modifying dynamic range.
             III. Remixed: A song where the original stems are completely rearranged, rebalanced, or sonically altered.
+            IV. Anniversary Edition: A collection of multiple discs combining remastered modifications of songs from a standard recording LP with an array of live recordings, unreleased studio gatherings, books, and collectibles.
+            V. Audiophile Pressing: Collections defined by a specific manufacturing standard as opposed to song makeup.
+            VI. Spatial Mix: A collection of songs released through a multi-channel structure, which may include channels such as Dolby Atmos and Sony 360 Reality Audio as examples.
         c. Specialized Compilation Formats:
             I. Sampler: A compilation constructed to present a record label artist roster or an upcoming era of music.
             II. Tribute: A compilation where multiple artists collaborate to record covers of songs written and performed by a single artist.
             III. Split Release: A compilation containing tracks from 2-3 individual artists.
             IV. Audio Demonstration: Compilations created to evaluate the results of advanced audio equipment.
             V. Historical Anthology: A historical compilation aiming to keep record of a specific geographic movement, musical movement, or timeframe frequently with supporting documentation.
+            VI. Greatest Hits: A collection containing an artist's most successful songs since the beginning of their career.
+            VII. Mixtapes: A collection that contains songs frequently released by multiple artists melded into a continuous audio stream. Mixtapes commonly encompass Hip Hop, Electronic, and Urban music.
         d. Soundtrack Formats:
             I. Original Motion Picture Soundtrack (OST): A collection of songs presented throughout a media product. OSTs frequently contain sourced songs and songs specifically produced for the media product.
             II. Original Score: Consists only of background instrumental songs produced to synchronize with on-screen movement and build tone. At least one composer executes the production. The production frequently contains electronic, ambient, and orchestral elements.
@@ -36,6 +43,8 @@ As music_preference_survey_data_master_raw is a small dataset and contains open-
             II. Unplugged: A particular subset of acoustic performance recorded live facing an audience.
             III. Live: Audio captured directly from a performance, which consists of room acoustics, audience sounds, and real-time differences from recorded songs.
             IV. Cover: A distinct recording of a song originally written and performed by a different artist.
+            V. Demo Recording: A raw collection presenting unpolished, minimally produced songs.
+            VI. Mashup: A recording where at least two songs are sonically combined to construct a new song.
 
     2. A standard recording LP is the official version of a Long Play.
 
