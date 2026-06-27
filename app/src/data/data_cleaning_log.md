@@ -12,11 +12,11 @@ As music_preference_survey_data_master_raw is a small dataset and contains open-
 
 ## Music Release Context
 
-    1. Music is released to different audiences through the succeeding format groups:
+    1. Music is released to different audiences through the following format groups:
         a. Primary Release Formats:
-            I. Single: Usually consists of one to three songs with a focus on a lead promotional song.
+            I. Standard Recording LP (Long Play): A full-length presentation of songs, which usually consists of at least seven songs.
             II. Standard Recording EP (Extended Play): Usually consists of four to six songs and is longer than a single.
-            III. Standard Recording LP (Long Play): A full-length presentation of songs, which usually consists of at least seven songs.
+            III. Single: Usually consists of one to three songs with a focus on a lead promotional song.
             IV. Maxi-Single: A specific collection frequently utilized in Dance, Electronic, and Hip Hop music that contains a lead single and an array of remix recordings, instrumental recordings, and B-sides.
             V. Double LP: A collection consisting of a pair of distinct volumes released within the same product. This is also a subset of the standard recording LP release type.
         b. Specialized Audio Editions and Re-release Formats:
@@ -62,14 +62,17 @@ As music_preference_survey_data_master_raw is a small dataset and contains open-
 
 ## Data Correction Standards
 
-    1. Correct song, artist, and primary feeling data when there is an obvious formatting issue:
-        a. Example: Changing a song field with a leading space, " 7 Words" to a song field without a leading space, "7 Words".
+    1. Correct song, artist, and primary feeling writing for formatting accuracy when there is a completely clear formatting issue:
+        a. Example: Changing a song with a leading space, " 7 Words" to a song without a leading space, "7 Words".
 
-    2. Correct song, artist, and primary feeling data when there is an obvious logical issue:
-        a. Example: Changing an artist field from “DeFTONes” to “Deftones”.
+    2. Correct song, artist, and primary feeling writing for logical accuracy when there is a completely clear logical issue:
+        a. Example: Changing an artist from “DeFTONes” to “Deftones”.
 
-    3. Correct primary feeling data when the written presentation is informal, and there is a primary feeling that is formal and demonstrates the closest meaning:
-        a. Example: Changing a primary feeling field from "Fire" to "Energized".
+    3. Correct primary feeling writing for concision and clarity -> 
+        a. When at least one of the following conditions is met:
+            I. The primary feeling writing exceeds one word.
+            II. The primary feeling writing communicates a meaning with partial clarity, and there is sufficient written context to substitute with one word that communicates a reasonably accurate meaning with complete clarity.
+        b. Example: Changing a primary feeling from "I feel like a surge of electricity bouncing through the house." to "Energized".
 
 ## Song Identification Method
 
@@ -120,15 +123,17 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
 1.   **[Complete Quality Sweep]** Processed remaining 85 rows to remove invalid data and systematically correct information:
 
-     a. [Removal] _ rows deleted because the submitted song, artist and primary feeling combination lacks sufficient written context to correct as a means of achieving both of the succeeding standards:
+     a. [Removal] _ rows deleted because the song, artist and primary feeling lacked sufficient written context to correct and meet all of the following standards:
 
-        I. An official and original song release by the submitted artist.
+        I. A song officially and originally released by the artist.
 
-        II. A valid and formal primary feeling.
+        II. A primary feeling that meets all of the following standards:
+            a. A primary feeling that is one word.
+            b. A primary feeling that communicates a reasonably accurate meaning with complete clarity.
 
-     b. [Removal] _ rows deleted because the submitted song and artist combination is a duplication of a song and artist combination corrected prior in the Complete Quality Sweep.
+     b. [Removal] _ rows deleted because the song and artist is a duplication of a song and artist corrected prior in the *Complete Quality Sweep*.
 
-     c. [Removal] _ rows deleted because the submitted artist did not officially and originally release the submitted song through any one of the succeeding formats:
+     c. [Removal] _ rows deleted because the artist did not officially and originally release the song through any of the following formats:
 
         I. Standard Recording LP
         
@@ -136,7 +141,7 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
         III. Single
 
-     d. [Removal] _ rows deleted because the submitted song and artist information is connected to insufficient data in Youtube Music. Insufficient data in Youtube Music achieves one of the succeeding conditions:
+     d. [Removal] _ rows deleted because the song and artist grouping is connected to insufficient data in Youtube Music. Insufficient data in Youtube Music meets one of the following occurrences:
 
          I. The song was officially and originally released within a standard recording LP, and the official and original standard recording LP release containing the song is not in Youtube Music. Any alternative official standard recording EP release containing the official song is not in Youtube Music, and any alternative official single release is not in Youtube Music.
 
