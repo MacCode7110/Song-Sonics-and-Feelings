@@ -72,7 +72,9 @@ As music_preference_survey_data_master_raw is a small dataset and contains open-
         a. When at least one of the following conditions is met:
             I. The primary feeling writing exceeds one word.
             II. The primary feeling writing communicates a meaning with partial clarity, and there is sufficient written context to substitute with one word that communicates a reasonably accurate meaning with complete clarity.
-        b. Example: Changing a primary feeling from "I feel like a surge of electricity bouncing through the house." to "Energized".
+        b. Examples: 
+            I. Changing a primary feeling from "I feel like a surge of electricity bouncing through the house." to "Energized".
+            II. Changing a primary feeling from "I feel happy, sad, and angry simultaneously." to "Ambivalence".
 
 ## Song Identification Method
 
@@ -113,7 +115,7 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
 1. **[Removal]** Executed `simple_random_sample.py` to randomly select 85 unique survey responses from the 268 data rows, omitting 183 remaining data rows.
 
-## [2026-6-26 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-6-27 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preference_survey_data_master_cleaned_v2.csv` -> `music_preference_survey_data_master_cleaned_v3.csv`
 - **Data Shape Change:** 86 (1 header row + 85 data rows) rows * 3 columns -> _ rows * 3 columns
