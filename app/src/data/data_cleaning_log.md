@@ -68,13 +68,17 @@ As music_preference_survey_data_master_raw is a small dataset and contains open-
     2. Correct song, artist, and primary feeling writing for logical accuracy when there is a completely clear logical issue:
         a. Example: Changing an artist from “DeFTONes” to “Deftones”.
 
-    3. Correct primary feeling writing for concision and clarity -> 
-        a. When at least one of the following conditions is met:
-            I. The primary feeling writing exceeds one word.
-            II. The primary feeling writing communicates a meaning with partial clarity, and there is sufficient written context to substitute with one word that communicates a reasonably accurate meaning with complete clarity.
+    3. Correct primary feeling writing for concision, grammar, natural speech, and clarity -> 
+        a. When at least one of the following conditions is satisfied:
+            I. Concision: The word count of the primary feeling writing exceeds one word.
+            II. Grammar: The primary feeling writing is not completely grammatically correct.
+            III. Natural Speech: The primary feeling writing does not completely reflect natural speech.
+            IV. Clarity: The primary feeling writing communicates a meaning with partial clarity, and there is sufficient written context to substitute with one word that communicates a reasonably accurate meaning with complete clarity.
         b. Examples: 
-            I. Changing a primary feeling from "I feel like a surge of electricity bouncing through the house." to "Energized".
-            II. Changing a primary feeling from "I feel happy, sad, and angry simultaneously." to "Ambivalence".
+            I. Concision Correction: Changing a primary feeling from "I feel like a surge of electricity bouncing through the house." to "Energized".
+            II. Grammar Correction: Changing a primary feeling from "Saddening" to "Sad".
+            III. Natural Speech Correction: Changing a primary feeling from "Happiness" to "Happy". 
+            IV. Concision and Clarity Correction: Changing a primary feeling from "I feel happy, sad, and angry simultaneously." to "Ambivalent".
 
 ## Song Identification Method
 
@@ -125,17 +129,14 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
 1.   **[Complete Quality Sweep]** Processed remaining 85 rows to remove invalid data and systematically correct information:
 
-     a. [Removal] _ rows deleted because the song, artist and primary feeling lacked sufficient written context to correct and meet all of the following standards:
+     a. [Removal] _ rows deleted because the song, artist and primary feeling lacked sufficient written context to satisfy all of the following standards:
 
-        I. A song officially and originally released by the artist.
+        I. A song officially released by the artist.
 
-        II. A primary feeling that meets all of the following standards:
-            a. A primary feeling that is one word.
-            b. A primary feeling that communicates a reasonably accurate meaning with complete clarity.
+        II. A primary feeling that satisfies the following standard:
+            a. A primary feeling that is one word, completely grammatically correct, completely reflects natural speech, and communicates a reasonably accurate meaning with complete clarity.
 
-     b. [Removal] _ rows deleted because the song and artist is a duplication of a song and artist corrected prior in the *Complete Quality Sweep*.
-
-     c. [Removal] _ rows deleted because the artist did not officially and originally release the song through any of the following formats:
+     b. [Removal] _ rows deleted because although there was sufficient written context to verify that the artist officially released the song, the artist did not officially and originally release the song through any of the following formats:
 
         I. Standard Recording LP
         
@@ -143,12 +144,15 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
         III. Single
 
-     d. [Removal] _ rows deleted because the song and artist grouping is connected to insufficient data in Youtube Music. Insufficient data in Youtube Music meets one of the following occurrences:
+     c. [Removal] _ rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song, the song and artist pairing is connected to insufficient data in Youtube Music. Insufficient data in Youtube Music satisfies one of the following conditions:
 
          I. The song was officially and originally released within a standard recording LP, and the official and original standard recording LP release containing the song is not in Youtube Music. Any alternative official standard recording EP release containing the official song is not in Youtube Music, and any alternative official single release is not in Youtube Music.
 
          II. The song was officially and originally released within a standard recording EP, and the official and original standard recording EP release containing the song is not in Youtube Music. Any alternative official standard recording LP release containing the official song is not in Youtube Music, and any alternative official single release is not in Youtube Music.
 
          III. The song was officially and originally released as a single, and the official and original single release is not in Youtube Music. Any alternative official standard recording EP release containing the official song is not in Youtube Music, and any alternative official standard recording LP release containing the official song is not in Youtube Music.
+
+
+     d. [Removal] _ rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song, and the song and artist pairing is connected to sufficient data in Youtube Music, the song and artist pairing is a duplication of a song and artist pairing corrected prior in the *Complete Quality Sweep*.
 
      e. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for _ remaining rows in the sequence.
