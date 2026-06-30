@@ -120,7 +120,7 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
 ---
 
-## [2026-6-29 - V2] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-6-30 - V2] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preference_survey_data_master_cleaned_v1.csv` -> `music_preference_survey_data_master_cleaned_v2.csv`
 - **Data Shape Change:** 276 (1 header row + 275 data rows) rows * 3 columns -> 86 (1 header row + 85 data rows) rows * 3 columns
@@ -145,9 +145,9 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
 1.   **[Complete Quality Sweep]** Processed remaining 85 rows to remove invalid data and systematically correct information:
 
-     a. [Removal] 1 rows deleted because the song, artist, and primary feeling contained exclusively NA values.
+     a. [Removal] _ rows deleted because the song, artist, and primary feeling contained exclusively NA values.
 
-     b. [Removal] 2 rows deleted because although the song, artist and primary feeling did not contain exclusively NA values, the song, artist, and primary feeling lacked sufficient written context to achieve both of the following standards:
+     b. [Removal] _ rows deleted because although the song, artist and primary feeling did not contain exclusively NA values, the song, artist, and primary feeling lacked sufficient written context to achieve both of the following standards:
 
         I. A song officially and originally released by the artist where the intention of the respondent is completely clear in the written response.
 
@@ -172,6 +172,6 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
      e. [Removal] _ rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a Standard Recording LP, Standard recording EP, or as a Single, and the song and artist pairing is connected to sufficient data in YouTube Music, the song and artist pairing is a duplication of a song and artist pairing corrected prior in the *Complete Quality Sweep*.
 
-     f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for 10 remaining rows in the sequence.
+     f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for _ remaining rows in the sequence.
 
 ---
