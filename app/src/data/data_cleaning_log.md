@@ -15,10 +15,10 @@ Since `music_preferences_and_feelings_survey_data_master_raw` is a small dataset
     1. Music is released to different audiences through the following format groups:
         a. Primary Release Formats:
             I. Standard Recording LP (Long Play): A full-length presentation of songs, which usually consists of at least seven songs.
-            II. Double LP (Double Long Play): A collection consisting of a pair of distinct volumes released within the same product. A Double LP is a Standard Recording LP.
+            II. Double LP (Double Long Play): A collection consisting of a pair of distinct volumes released within the same product. A Double LP is a standard recording LP.
             III. Standard Recording EP (Extended Play): Usually consists of four to six songs and is longer than a single.
             IV. Single: Usually consists of one to three songs with a focus on a lead promotional song.
-            V. Maxi-Single: A specific collection frequently utilized in Dance, Electronic, and Hip Hop music that contains a lead single and an array of remix recordings, instrumental recordings, and B-sides.
+            V. Maxi-single: A specific collection frequently utilized in Dance, Electronic, and Hip Hop music that contains a lead single and an array of remix recordings, instrumental recordings, and B-sides.
         b. Specialized Audio Editions and Re-release Formats:
             I. Deluxe: An extended reissue of an existing standard recording LP containing bonus songs, demo songs, and/or b-side songs.
             II. Remastered: A song that is sonically optimized through contemporary technology, which usually encompasses increasing volume and modifying dynamic range.
@@ -163,16 +163,28 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
         III. Single
 
-     d. [Removal] _ rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a Standard Recording LP, Standard recording EP, or as a Single, the song and artist pairing is connected to insufficient data in YouTube Music. Insufficient data in YouTube Music achieves one of the succeeding findings:
+     d. [Removal] _ rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, Standard recording EP, or as a single, the song and artist pairing is connected to insufficient data in YouTube Music. Insufficient data in YouTube Music achieves at least one of the succeeding findings:
 
-         I. The song was officially and originally released within a standard recording LP, and the official, original, and structurally correct standard recording LP release containing the song is not in YouTube Music. There is not an official, structurally correct standard recording EP release containing the song in YouTube Music, and there is not an official, structurally correct single release containing the song in YouTube Music.
+        I. The song was officially and originally released within a standard recording LP, and the official, original, and structurally correct standard recording LP release containing the song is not in YouTube Music. The song was not officially released within a standard recording EP, and the song was not officially released as a single.
+        
+        II. The song was officially and originally released within a standard recording LP, and the official, original, and structurally correct standard recording LP release containing the song is not in YouTube Music. There is at least one official, structurally incorrect standard recording EP release containing the song that is in YouTube Music.
 
-         II. The song was officially and originally released within a standard recording EP, and the official, original, and structurally correct standard recording EP release containing the song is not in YouTube Music. There is not an official, structurally correct standard recording LP release containing the song in YouTube Music, and there is not an official, structurally correct single release containing the song in YouTube Music.
+        III. The song was officially and originally released within a standard recording LP, and the official, original, and structurally correct standard recording LP release containing the song is not in YouTube Music. There is at least one official, structurally incorrect single release that is in YouTube Music.
 
-         III. The song was officially and originally released as a single, and the official, original, and structurally correct single release is not in YouTube Music. There is not an official, structurally correct standard recording EP release containing the song in YouTube Music, and there is not an official, structurally correct LP release containing the song in YouTube Music.
+        IV. The song was officially and originally released within a standard recording EP, and the official, original, and structurally correct standard recording EP release containing the song is not in YouTube Music. The song was not officially released within a standard recording LP, and the song was not officially released as a single.
+        
+        V. The song was officially and originally released within a standard recording EP, and the official, original, and structurally correct standard recording EP release containing the song is not in YouTube Music. There is at least one official, structurally incorrect standard recording LP release containing the song that is in YouTube Music.
+
+        VI. The song was officially and originally released within a standard recording EP, and the official, original, and structurally correct standard recording EP release containing the song is not in YouTube Music. There is at least one official, structurally incorrect single release that is in YouTube Music.
+
+        VII. The song was officially and originally released within a single, and the official, original, and structurally correct single release containing the song is not in YouTube Music. The song was not officially released within a standard recording EP, and the song was not officially released within a standard recording LP.
+        
+        VIII. The song was officially and originally released within a single, and the official, original, and structurally correct single release is not in YouTube Music. There is at least one official, structurally incorrect standard recording EP release containing the song that is in YouTube Music.
+
+        IX. The song was officially and originally released within a single, and the official, original, and structurally correct single release containing the song is not in YouTube Music. There is at least one official, structurally incorrect standard recording LP release containing the song that is in YouTube Music.
 
 
-     e. [Removal] _ row deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a Standard Recording LP, Standard recording EP, or as a Single, and the song and artist pairing is connected to sufficient data in YouTube Music, the song and artist pairing is a duplication of a song and artist pairing corrected prior in the *Complete Quality Sweep*.
+     e. [Removal] _ row deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, and the song and artist pairing is connected to sufficient data in YouTube Music, the song and artist pairing is a duplication of a song and artist pairing corrected prior in the *Complete Quality Sweep*.
 
      f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for _ remaining rows in the sequence.
 
