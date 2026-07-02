@@ -8,13 +8,13 @@ Web Developer and Data Researcher: Matthew McAlarney
 
 The _Music Preferences And Feelings Survey_ was administered to a targeted 250 full-time employees in the United States through Survey Monkey from May 28th, 2026 - June 5th, 2026. A total of 275 survey responses from full-time employees were collected and downloaded to `music_preferences_and_feelings_survey_data_master_raw.csv`.
 
-Since `music_preferences_and_feelings_survey_data_master_raw` is a small dataset and contains open-response survey data that represents human thought and writing, steps are manually executed and executed through Python programs to build the succeeding CSV files:
+Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dataset and contains open-response survey data that represents human thought and writing, steps are manually executed and executed through Python programs to build the succeeding CSV files:
 
-1. V1: [Initial Quality Sweep - Manual Context Review, Establish Structural Baseline] -> `music_preferences_and_feelings_survey_data_master_cleaned_v1`
+1. V1: [Initial Quality Sweep - Manual Context Review, Establish Structural Baseline] -> `music_preferences_and_feelings_survey_data_master_cleaned_v1.csv`
 
-2. V2: [Dataset Truncation (Simple Random Sampling) - Python Program Execution, Select Representative Subset of Dataset] -> `music_preferences_and_feelings_survey_data_master_cleaned_v2`
+2. V2: [Dataset Truncation (Simple Random Sampling) - Python Program Execution, Select Representative Subset of Dataset] -> `music_preferences_and_feelings_survey_data_master_cleaned_v2.csv`
 
-3. V3: [Complete Quality Sweep - Manual Context Review, Remove Invalid Data and Systematically Correct Information] -> `music_preferences_and_feelings_survey_data_master_cleaned_v3`
+3. V3: [Complete Quality Sweep - Manual Context Review, Remove Invalid Data and Systematically Correct Information] -> `music_preferences_and_feelings_survey_data_master_cleaned_v3.csv`
 
 ## Music Release Context
 
