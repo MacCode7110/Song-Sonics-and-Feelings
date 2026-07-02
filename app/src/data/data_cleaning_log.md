@@ -161,7 +161,7 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 
 ## Pipeline Limitations
 
-1. The survey population is bounded completely to full-time employees in the United States. This constraint creates a sampling selection bias, which structurally omits demographics with different music preferences such as full-time students, part-time students, part-time employees, and retired individuals. Consequently, all data points rendered in the PCA Plot reflect the music preferences of a subset of the full-time employee demographic in the United States rather than a wider general demographic in the United States.
+1. The survey population is bounded completely to full-time employees in the United States. This constraint creates a sampling selection bias, which structurally omits demographics with different music preferences such as full-time students, part-time students, part-time employees, and retired individuals. Consequently, all data points rendered in the PCA Plot reflect the music preferences of a subset of the full-time employee demographic in the United States rather than a general demographic in the United States.
 
 2. The yt-dlp Python library is utilized to download and extract the highest quality available compressed audio from YouTube Music. Subsequently, yt-dlp uses FFmpeg to transform the compressed audio into an uncompressed WAV file. There is some probability that the subset of selected songs are associated with WAV files containing different levels of audio quality and distortion. As a result, data clustering in the PCA Plot may partially reflect musical qualities that do not accurately represent the original musical qualities of certain songs.
 
