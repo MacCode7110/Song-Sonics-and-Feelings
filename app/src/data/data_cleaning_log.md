@@ -88,17 +88,15 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
         
         VI. Mashup: A mashup release is a recording presenting multiple songs sonically combined to create a new song.
 
-2. A standard recording LP is the official version of a Long Play.
+2. A standard recording LP release is the official version of a Long Play.
 
-3. A standard recording EP is the official version of an Extended Play.
+3. A standard recording EP release is the official version of an Extended Play.
 
 4. An official release of a song is an Audio Object in YouTube Music, which is different from a Music Video Object in YouTube Music. A song is officially released through any one of the release format groups detailed in Item 1. A song is not officially released as a music video.
 
 5. There is some probability that the release of a song in one particular format contains different engineering output and musical qualities compared to the release of a song in a different particular format.
 
-6. An original release of a song is the release format where the song is first available. A song is first available through any one of the release format groups detailed in Item 1.
-
-7. Later pressings of an original release format that are renamed qualify as the original release format.
+6. An original release of a song is the release format where the song is first available. A song is first available through one of the release format groups detailed in Item 1.
 
 ## Data Correction Measures
 
