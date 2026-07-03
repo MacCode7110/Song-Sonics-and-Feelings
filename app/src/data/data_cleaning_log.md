@@ -86,7 +86,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
         
         V. Demo Recording: A demo release is a collection of songs presenting sparse production.
         
-        VI. Mashup: A mashup release is a recording consisting of multiple songs sonically combined to create a new song.
+        VI. Mashup: A mashup release is a recording presenting multiple songs sonically combined to create a new song.
 
 2. A standard recording LP is the official version of a Long Play.
 
