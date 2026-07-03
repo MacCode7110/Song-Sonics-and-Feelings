@@ -124,7 +124,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
         
         III. Natural Speech: The primary feeling writing does not completely reflect natural speech.
         
-        IV. Clarity: The primary feeling writing communicates a meaning with partial clarity, and there is sufficient written context to substitute with one word that communicates an understandable meaning where the intention of the respondent is reasonably clear in the [primary_feeling] response column.
+        IV. Clarity: The primary feeling writing communicates a meaning with reasonable clarity, and there is sufficient written context to substitute with one word that communicates an understandable meaning where the intention of the respondent is reasonably clear in the [primary_feeling] response column.
     
     b. Examples: 
         
