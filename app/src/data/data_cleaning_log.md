@@ -198,7 +198,7 @@ To guarantee a fair procedure for sonic feature extraction throughout all songs,
 ## [2026-7-3 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_cleaned_v2.csv` -> `music_preferences_and_feelings_survey_data_master_cleaned_v3.csv`
-- **Data Shape Change:** 86 (1 header row + 85 data rows) rows * 3 columns -> _ rows * 3 columns
+- **Data Shape Change:** 86 (1 header row + 85 data rows) rows * 3 columns -> _ rows * 4 columns
 - **Purpose:** [Complete Quality Sweep & Song URL Insertion - Manual Context Review, Remove Invalid Data and Systematically Correct Information]
 - **Statistical Acknowledgement**: While the 85 data rows sampled during the *Dataset Truncation (Simple Random Sampling)* in V2 establishes a 95% confidence level and margin of error less than 9% for the full-time employee pool, the rigid domain constraints enforced in V3 decreased the usable data rows to _. The resulting PCA Plot operates as an exploratory subset of the 85 sampled data rows.
 
