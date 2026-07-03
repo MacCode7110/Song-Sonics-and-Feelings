@@ -262,7 +262,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
      a. [Removal] _ row deleted because the song, artist, and primary feeling contained exclusively NA values.
 
-     b. [Removal] _ rows deleted because although the song, artist and primary feeling did not contain exclusively NA values, the song, artist, and primary feeling lacked sufficient written context to achieve both of the succeeding measures as detailed in *Data Correction Measures*:
+     b. [Removal] 1 rows deleted because although the song, artist and primary feeling did not contain exclusively NA values, the song, artist, and primary feeling lacked sufficient written context to achieve both of the succeeding measures as detailed in *Data Correction Measures*:
 
         I. A song officially and originally released by the artist where the intention of the respondent is completely clear in the written response.
 
@@ -280,8 +280,8 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
      e. [Removal] _ row deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, and the song and artist pairing is connected to sufficient data in YouTube Music as detailed in *Data Research Questions* and *Data Evaluation Measures*, the song and artist pairing is a duplication of a song and artist pairing corrected prior in the *Complete Quality Sweep*.
 
-     f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for _ remaining rows in the sequence.
+     f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for 4 remaining rows in the sequence.
 
-     g. [Addition] Added the YouTube Music song URL in the [youtube_music_url] column for _ remaining rows in the sequence.
+     g. [Addition] Added the YouTube Music song URL in the [youtube_music_url] column for 4 remaining rows in the sequence.
 
 ---
