@@ -99,19 +99,19 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
         2. A particular release that does not maintain the original count, list, and ordering of songs for the release format is structurally incorrect.
 
     3. If the song was officially and originally released through a standard recording LP, then ->
-        a. Is the standard recording LP containing the song in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
-        b. If the song was also officially released within a standard recording EP, is the standard recording EP containing the song in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
-        c. If the song was also officially released within a single, is the single in YouTube Music? If so, is the single containing the song structurally correct?
+        a. Is the standard recording LP containing the song offered in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
+        b. If the song was also officially released within a standard recording EP, is the standard recording EP containing the song offered in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
+        c. If the song was also officially released within a single, is the single offered in YouTube Music? If so, is the single containing the song structurally correct?
 
     4. If the song was officially and originally released through a standard recording EP, then ->
-        a. Is the standard recording EP containing the song in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
-        b. If the song was also officially released within a standard recording LP, is the standard recording LP containing the song in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
-        c. If the song was also officially released within a single, is the single in YouTube Music? If so, is the single containing the song structurally correct?
+        a. Is the standard recording EP containing the song offered in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
+        b. If the song was also officially released within a standard recording LP, is the standard recording LP containing the song offered in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
+        c. If the song was also officially released within a single, is the single offered in YouTube Music? If so, is the single containing the song structurally correct?
 
     5. If the song was officially and originally released through a single, then ->
-        a. Is the single in YouTube Music? If so, is the single containing the song structurally correct?
-        b. If the song was also officially released within a standard recording EP, is the standard recording EP containing the song in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
-        c. If the song was also officially released within a standard recording LP, is the standard recording LP containing the song in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
+        a. Is the single offered in YouTube Music? If so, is the single containing the song structurally correct?
+        b. If the song was also officially released within a standard recording EP, is the standard recording EP containing the song offered in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
+        c. If the song was also officially released within a standard recording LP, is the standard recording LP containing the song offered in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
 
 ## Data Evaluation Measures
 
