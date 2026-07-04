@@ -282,12 +282,12 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
         III. Single
 
-     d. [Removal] 3 rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, the song and artist grouping is connected to insufficient data in YouTube Music as presented in *Data Research Questions* and *Data Evaluation Measures*.
+     d. [Removal] 4 rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, the song and artist grouping is connected to insufficient data in YouTube Music as presented in *Data Research Questions* and *Data Evaluation Measures*.
 
      e. [Removal] 1 row deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, and the song and artist grouping is connected to sufficient data in YouTube Music as presented in *Data Research Questions* and *Data Evaluation Measures*, the song and artist grouping is a duplication of a song and artist grouping corrected prior in the *Complete Quality Sweep*.
 
-     f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for 24 remaining rows in the sequence.
+     f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for 25 remaining rows in the sequence.
 
-     g. [Addition] Added the YouTube Music song URL in the [youtube_music_url] column for 24 remaining rows in the sequence.
+     g. [Addition] Added the YouTube Music song URL in the [youtube_music_url] column for 25 remaining rows in the sequence.
 
 ---
