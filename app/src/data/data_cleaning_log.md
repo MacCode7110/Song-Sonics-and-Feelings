@@ -268,7 +268,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
      a. [Removal] _ row deleted because the song, artist, and primary feeling contained exclusively NA values.
 
-     b. [Removal] 4 rows deleted because although the song, artist and primary feeling did not contain exclusively NA values, the song, artist, and primary feeling lacked sufficient written context to achieve both of the succeeding measures as presented in *Data Correction Measures*:
+     b. [Removal] 5 rows deleted because although the song, artist and primary feeling did not contain exclusively NA values, the song, artist, and primary feeling lacked sufficient written context to achieve both of the succeeding measures as presented in *Data Correction Measures*:
 
         I. A song officially and originally released by the artist where the intention of the respondent is completely clear in the [song_name] and [artist_name] response columns.
 
