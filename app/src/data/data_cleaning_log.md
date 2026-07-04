@@ -150,57 +150,57 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 4. If the song was officially and originally released through a standard recording LP, then ->
     
-    a. Is the standard recording LP containing the song accessible in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
+    a. Is the standard recording LP containing the official song accessible in YouTube Music? If so, is the standard recording LP containing the official song structurally correct?
 
-    b. If the song was also officially released within a standard recording EP, is the standard recording EP containing the song accessible in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
+    b. If the song was also officially released within a standard recording EP, is the standard recording EP containing the official song accessible in YouTube Music? If so, is the standard recording EP containing the official song structurally correct?
     
-    c. If the song was also officially released within a single, is the single accessible in YouTube Music? If so, is the single containing the song structurally correct?
+    c. If the song was also officially released within a single, is the single accessible in YouTube Music? If so, is the single containing the official song structurally correct?
 
 5. If the song was officially and originally released through a standard recording EP, then ->
     
-    a. Is the standard recording EP containing the song accessible in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
+    a. Is the standard recording EP containing the official song accessible in YouTube Music? If so, is the standard recording EP containing the official song structurally correct?
     
-    b. If the song was also officially released within a standard recording LP, is the standard recording LP containing the song accessible in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
+    b. If the song was also officially released within a standard recording LP, is the standard recording LP containing the official song accessible in YouTube Music? If so, is the standard recording LP containing the official song structurally correct?
     
-    c. If the song was also officially released within a single, is the single accessible in YouTube Music? If so, is the single containing the song structurally correct?
+    c. If the song was also officially released within a single, is the single accessible in YouTube Music? If so, is the single containing the official song structurally correct?
 
 6. If the song was officially and originally released through a single, then ->
     
-    a. Is the single accessible in YouTube Music? If so, is the single containing the song structurally correct?
+    a. Is the single accessible in YouTube Music? If so, is the single containing the official song structurally correct?
     
-    b. If the song was also officially released within a standard recording EP, is the standard recording EP containing the song accessible in YouTube Music? If so, is the standard recording EP containing the song structurally correct?
+    b. If the song was also officially released within a standard recording EP, is the standard recording EP containing the official song accessible in YouTube Music? If so, is the standard recording EP containing the official song structurally correct?
     
-    c. If the song was also officially released within a standard recording LP, is the standard recording LP containing the song accessible in YouTube Music? If so, is the standard recording LP containing the song structurally correct?
+    c. If the song was also officially released within a standard recording LP, is the standard recording LP containing the official song accessible in YouTube Music? If so, is the standard recording LP containing the official song structurally correct?
 
 ## Data Evaluation Measures
 
 1. Sufficient data in YouTube Music achieves at least one of the succeeding findings:
 
-    a. The song was officially and originally released within a standard recording LP, and the official, structurally correct standard recording LP release containing the song is accessible in YouTube Music. 
+    a. The song was officially and originally released within a standard recording LP, and the official, structurally correct standard recording LP release containing the official song is accessible in YouTube Music. 
 
-    b. The song was officially and originally released within a standard recording LP, and the official, structurally correct standard recording LP release containing the song is not accessible in YouTube Music. The song was also officially released within a standard recording EP, and the official, structurally correct standard recording EP containing the song is accessible in YouTube Music.
+    b. The song was officially and originally released within a standard recording LP, and the official, structurally correct standard recording LP release containing the official song is not accessible in YouTube Music. The song was also officially released within a standard recording EP, and the official, structurally correct standard recording EP containing the official song is accessible in YouTube Music.
 
-    c. The song was officially and originally released within a standard recording LP, and the official, structurally correct standard recording LP release containing the song is not accessible in YouTube Music. The song was also officially released as a single, and the official, structurally correct single containing the song is accessible in YouTube Music.
+    c. The song was officially and originally released within a standard recording LP, and the official, structurally correct standard recording LP release containing the official song is not accessible in YouTube Music. The song was also officially released as a single, and the official, structurally correct single containing the official song is accessible in YouTube Music.
         
-    d. The song was officially and originally released within a standard recording EP, and the official, structurally correct standard recording EP release containing the song is accessible in YouTube Music.
+    d. The song was officially and originally released within a standard recording EP, and the official, structurally correct standard recording EP release containing the official song is accessible in YouTube Music.
 
-    e. The song was officially and originally released within a standard recording EP, and the official, structurally correct standard recording EP release containing the song is not accessible in YouTube Music. The song was also officially released within a standard recording LP, and the official, structurally correct standard recording LP containing the song is accessible in YouTube Music.
+    e. The song was officially and originally released within a standard recording EP, and the official, structurally correct standard recording EP release containing the official song is not accessible in YouTube Music. The song was also officially released within a standard recording LP, and the official, structurally correct standard recording LP containing the official song is accessible in YouTube Music.
 
-    f. The song was officially and originally released within a standard recording EP, and the official, structurally correct standard recording EP release containing the song is not accessible in YouTube Music. The song was also officially released as a single, and the official, structurally correct single containing the song is accessible in YouTube Music.
+    f. The song was officially and originally released within a standard recording EP, and the official, structurally correct standard recording EP release containing the official song is not accessible in YouTube Music. The song was also officially released as a single, and the official, structurally correct single containing the official song is accessible in YouTube Music.
 
-    g. The song was officially and originally released as a single, and the official, structurally correct single release containing the song is accessible in YouTube Music.
+    g. The song was officially and originally released as a single, and the official, structurally correct single release containing the official song is accessible in YouTube Music.
 
-    h. The song was officially and originally released as a single, and the official, structurally correct single release containing the song is not accessible in YouTube Music. The song was also officially released within a standard recording EP, and the official, structurally correct standard recording EP containing the song is accessible in YouTube Music.
+    h. The song was officially and originally released as a single, and the official, structurally correct single release containing the official song is not accessible in YouTube Music. The song was also officially released within a standard recording EP, and the official, structurally correct standard recording EP containing the official song is accessible in YouTube Music.
 
-    i. The song was officially and originally released as a single, and the official, structurally correct single release containing the song is not accessible in YouTube Music. The song was also officially released within a standard recording LP, and the official, structurally correct standard recording LP containing the song is accessible in YouTube Music.
+    i. The song was officially and originally released as a single, and the official, structurally correct single release containing the official song is not accessible in YouTube Music. The song was also officially released within a standard recording LP, and the official, structurally correct standard recording LP containing the official song is accessible in YouTube Music.
 
 2. Insufficient data in YouTube Music achieves at least one of the succeeding findings:
 
-    a. The song was officially and originally released within a standard recording LP, and the official, structurally correct standard recording LP release containing the song is not accessible in YouTube Music. There is no official, structurally correct standard recording EP release containing the song accessible in YouTube Music, and there is no official, structurally correct single release containing the song accessible in YouTube Music.
+    a. The song was officially and originally released within a standard recording LP, and the official, structurally correct standard recording LP release containing the official song is not accessible in YouTube Music. There is no official, structurally correct standard recording EP release containing the official song accessible in YouTube Music, and there is no official, structurally correct single release containing the official song accessible in YouTube Music.
 
-    b. The song was officially and originally released within a standard recording EP, and the official, structurally correct standard recording EP release containing the song is not accessible in YouTube Music. There is no official, structurally correct standard recording LP release containing the song accessible in YouTube Music, and there is no official, structurally correct single release containing the song accessible in YouTube Music.
+    b. The song was officially and originally released within a standard recording EP, and the official, structurally correct standard recording EP release containing the official song is not accessible in YouTube Music. There is no official, structurally correct standard recording LP release containing the official song accessible in YouTube Music, and there is no official, structurally correct single release containing the official song accessible in YouTube Music.
 
-    c. The song was officially and originally released within a single, and the official, structurally correct single release containing the song is not accessible in YouTube Music. There is no official, structurally correct standard recording EP release containing the song accessible in YouTube Music, and there is no official, structurally correct standard recording LP release containing the song accessible in YouTube Music.
+    c. The song was officially and originally released within a single, and the official, structurally correct single release containing the official song is not accessible in YouTube Music. There is no official, structurally correct standard recording EP release containing the official song accessible in YouTube Music, and there is no official, structurally correct standard recording LP release containing the official song accessible in YouTube Music.
     
 ## Song Selection Method
 
@@ -282,7 +282,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
         III. Single
 
-     d. [Removal] 2 rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, the song and artist grouping is connected to insufficient data in YouTube Music as presented in *Data Research Questions* and *Data Evaluation Measures*.
+     d. [Removal] 3 rows deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, the song and artist grouping is connected to insufficient data in YouTube Music as presented in *Data Research Questions* and *Data Evaluation Measures*.
 
      e. [Removal] 1 row deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, and the song and artist grouping is connected to sufficient data in YouTube Music as presented in *Data Research Questions* and *Data Evaluation Measures*, the song and artist grouping is a duplication of a song and artist grouping corrected prior in the *Complete Quality Sweep*.
 
