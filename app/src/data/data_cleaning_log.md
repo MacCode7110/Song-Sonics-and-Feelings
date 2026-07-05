@@ -268,7 +268,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
      a. [Removal] 1 row deleted because the song, artist, and primary feeling contained exclusively NA values.
 
-     b. [Removal] 14 rows deleted because although the song, artist and primary feeling did not contain exclusively NA values, the song, artist, and primary feeling lacked sufficient written context to achieve both of the succeeding measures as presented in *Data Correction Measures*:
+     b. [Removal] 16 rows deleted because although the song, artist and primary feeling did not contain exclusively NA values, the song, artist, and primary feeling lacked sufficient written context to achieve both of the succeeding measures as presented in *Data Correction Measures*:
 
         I. A song officially and originally released by the artist where the intention of the respondent is completely clear in the [song_name] and [artist_name] response columns.
 
@@ -286,8 +286,8 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
      e. [Removal] 1 row deleted because although there was sufficient written context to verify that the artist officially and originally released the song within a standard recording LP, standard recording EP, or as a single, and the song and artist grouping is connected to sufficient data in YouTube Music as presented in *Data Research Questions* and *Data Evaluation Measures*, the song and artist grouping is a duplication of a song and artist grouping corrected prior in the *Complete Quality Sweep*.
 
-     f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for 34 remaining rows in the sequence.
+     f. [Correction] Corrected information in [song_name], [artist_name] and [primary_feeling] columns for 35 remaining rows in the sequence.
 
-     g. [Addition] Added the YouTube Music song URL in the [youtube_music_url] column for 34 remaining rows in the sequence.
+     g. [Addition] Added the YouTube Music song URL in the [youtube_music_url] column for 35 remaining rows in the sequence.
 
 ---
