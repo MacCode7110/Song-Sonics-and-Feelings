@@ -298,6 +298,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_cleaned_v3.csv` -> `music_preferences_and_feelings_survey_data_master_cleaned_v4.csv`
 - **Data Shape Change:** 46 (1 header row + 45 data rows) rows * 4 columns -> _ (1 header row + _ data rows) rows * _ columns
-- **Purpose:** [Complete Quality Sweep & Song URL Insertion - Manual Context Review, Remove Invalid Data and Systematically Correct Information]
+- **Purpose:** [Primary Feeling Mapping - Python Program Execution, Map each data cell in the [primary_feeling] column to a quadrant in Russell's Core Affect Framework]
+- **Methodology:** 
 
 ### Steps Executed:
