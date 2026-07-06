@@ -16,7 +16,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 3. V3: [Complete Quality Sweep & Song URL Insertion - Manual Context Review, Remove Invalid Data and Systematically Correct Information] -> `music_preferences_and_feelings_survey_data_master_cleaned_v3.csv`
 
-4. V4: [] -> `music_preferences_and_feelings_survey_data_master_cleaned_v4.csv`
+4. V4: [Primary Feeling Mapping - Python Program Execution, Map each data cell in the [primary_feeling] column to a quadrant in Russell's Core Affect Framework] -> `music_preferences_and_feelings_survey_data_master_cleaned_v4.csv`
 
 ## Song Release Context
 
