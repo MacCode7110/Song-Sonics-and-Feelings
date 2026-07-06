@@ -7,36 +7,36 @@ def map_primary_feeling_to_quadrant(primary_feeling):
     # Declare quadrant mapping dictionary for primary feelings through the lens of Russell's Core Affect Framework. Valence maps to the x-axis. Arousal maps to the y-axis. Quadrants are declared through four different groupings of primary feelings. Primary feelngs are mapped to the quadrant that most accurately represents the corresponding Arousal and Valence qualities. Primary feelings are mapped through the succeeding groupings.
     quadrant_dictionary = {
         # Quadrant 1 (Top-Right): High Arousal + Positive Valence
-        "Happy": "Quadrant 1 (Top-Right)",
-        "Upbeat": "Quadrant 1 (Top-Right)",
-        "Free-spirited": "Quadrant 1 (Top-Right)",
-        "Joyful": "Quadrant 1 (Top-Right)",
-        "Empowered": "Quadrant 1 (Top-Right)",
-        "Excited": "Quadrant 1 (Top-Right)",
-        "Awesome": "Quadrant 1 (Top-Right)",
-        "Good": "Quadrant 1 (Top-Right)",
-        "Euphoric": "Quadrant 1 (Top-Right)",
-        "Youthful": "Quadrant 1 (Top-Right)",
-        "Energized": "Quadrant 1 (Top-Right)",
-        "Enthusiastic": "Quadrant 1 (Top-Right)",
-        "Confident": "Quadrant 1 (Top-Right)",
-        "Joy": "Quadrant 1 (Top-Right)",
-        "Elated": "Quadrant 1 (Top-Right)",
-        "Powerful": "Quadrant 1 (Top-Right)",
-        "Awestruck": "Quadrant 1 (Top-Right)",
+        "Happy": "Quadrant 1",
+        "Upbeat": "Quadrant 1",
+        "Free-spirited": "Quadrant 1",
+        "Joyful": "Quadrant 1",
+        "Empowered": "Quadrant 1",
+        "Excited": "Quadrant 1",
+        "Awesome": "Quadrant 1",
+        "Good": "Quadrant 1",
+        "Euphoric": "Quadrant 1",
+        "Youthful": "Quadrant 1",
+        "Energized": "Quadrant 1",
+        "Enthusiastic": "Quadrant 1",
+        "Confident": "Quadrant 1",
+        "Joy": "Quadrant 1",
+        "Elated": "Quadrant 1",
+        "Powerful": "Quadrant 1",
+        "Awestruck": "Quadrant 1",
         # Quadrant 2 (Top-Left): High Arousal + Negative Valence
-        "Bitter": "Quadrant 2 (Top-Left)",
+        "Bitter": "Quadrant 2",
         # Quadrant 3 (Bottom-Left): Low Arousal + Negative Valence
-        "Melancholic": "Quadrant 3 (Bottom-Left)",
-        "Bittersweet": "Quadrant 3 (Bottom-Left)",
+        "Melancholic": "Quadrant 3",
+        "Bittersweet": "Quadrant 3",
         # Quadrant 4 (Bottom-Right): Low Arousal + Positive Valence
-        "Calm": "Quadrant 4 (Bottom-Right)",
-        "Comforted": "Quadrant 4 (Bottom-Right)",
-        "Nostalgic": "Quadrant 4 (Bottom-Right)",
-        "Validated": "Quadrant 4 (Bottom-Right)",
-        "Empathy": "Quadrant 4 (Bottom-Right)",
-        "Inspired": "Quadrant 4 (Bottom-Right)",
-        "Hopeful": "Quadrant 4 (Bottom-Right)"
+        "Calm": "Quadrant 4",
+        "Comforted": "Quadrant 4",
+        "Nostalgic": "Quadrant 4",
+        "Validated": "Quadrant 4",
+        "Empathy": "Quadrant 4",
+        "Inspired": "Quadrant 4",
+        "Hopeful": "Quadrant 4"
     }
     
     # Return mapped quadrant value for the argument primary_feeling.
