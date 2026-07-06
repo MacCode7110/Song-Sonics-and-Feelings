@@ -222,6 +222,18 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 6. When YouTube Music offers certain standard recording LPs, standard recording EPs, and singles, there is some probability that duplicates of these official releases are also accessible. YouTube Music provides duplicates of standard recording LPs, standard recording EPs, and singles when the distributor resends the official release with updated information. There is also some probability that at least one of the duplicates is structurally incorrect and contains songs altered for secondary initiatives. Consequently, data clustering in the PCA Plot may partially group songs based on engineering output rather than similar musical qualities.
 
+## Applying Russell's Core Affect Framework
+
+1. To provide a method for understanding the creation of feelings in comparison to sonic features extracted from Essentia, each corrected primary feeling in the resulting set of usable data rows is mapped to one of the four quadrants in Russell's Core Effect Framework. Functioning as a reliable system for describing the creation of feelings, Russell's Core Effect Framework communicates that all human emotions are almagamations of Valence and Arousal, which are essential neurophysiological dimensions. Valence measures the extent of pleasure and displeasure, and Arousal measures the extent of activation and deactivation. Valence maps to the x-axis where values range from highly unpleasant to highly pleasant, and Arousal maps to the y-axis where values range from highly enervated to highly energized. Moving through the Valence and Arousal neurophysiological dimensions builds a circular space mapping different feelings to the succeeding quadrants:
+
+    a. Quadrant 1 (Top-Right): High Arousal + Positive Valence
+
+    b. Quadrant 2 (Top-Left): High Arousal + Negative Valence
+
+    c. Quadrant 3 (Bottom-Left): Low Arousal + Negative Valence
+
+    d. Quadrant 4 (Bottom-Right): Low Arousal + Positive Valence
+
 ---
 
 ## [2026-6-29 - V1] - [Matthew McAlarney - Web Developer, Data Researcher]
