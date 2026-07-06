@@ -9,7 +9,7 @@ def map_primary_feeling_to_quadrant(primary_feeling):
         # Quadrant 1 (Top-Right): High Arousal + Positive Valence
         "Happy": "Quadrant 1",
         "Upbeat": "Quadrant 1",
-        "Free-spirited": "Quadrant 1",
+        "Independent": "Quadrant 1",
         "Empowered": "Quadrant 1",
         "Excited": "Quadrant 1",
         "Awesome": "Quadrant 1",
