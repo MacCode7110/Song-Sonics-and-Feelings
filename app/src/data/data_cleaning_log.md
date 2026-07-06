@@ -298,7 +298,8 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_cleaned_v3.csv` -> `music_preferences_and_feelings_survey_data_master_cleaned_v4.csv`
 - **Data Shape Change:** 46 (1 header row + 45 data rows) rows * 4 columns -> _ (1 header row + _ data rows) rows * _ columns
-- **Purpose:** [Primary Feeling Mapping - Python Program Execution, Map each data cell in the [primary_feeling] column to a quadrant in Russell's Core Affect Framework]
-- **Methodology:** 
+- **Purpose:** [Primary Feeling Mapping - Python Program Execution, Map each primary feeling in the [primary_feeling] column to one of the four quadrants established in Russell's Core Affect Framework]
+- **Methodology:** To build a blueprint for comprehending emotional qualities in comparison to sonic features extracted from Essentia, each primary feeling in the [primary_feeling] column is mapped into one of the four quadrants established in Russell's Core Affect Framework. Through examining the coordinates of Valence and Arousal, emotional qualities are categorically represented within the spatial geometry of the PCA Plot.
 
 ### Steps Executed:
+
