@@ -236,7 +236,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-6-29 - V1] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-7 - V1] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_raw.csv` -> `music_preferences_and_feelings_survey_data_master_cleaned_v1.csv`
 - **Data Shape Change:** 277 rows (2 header rows + 275 data rows) * 19 columns -> 276 (1 header row + 275 data rows) rows * 3 columns
@@ -254,7 +254,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-6-30 - V2] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-7 - V2] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_cleaned_v1.csv` -> `music_preferences_and_feelings_survey_data_master_cleaned_v2.csv`
 - **Data Shape Change:** 276 (1 header row + 275 data rows) rows * 3 columns -> 86 (1 header row + 85 data rows) rows * 3 columns
@@ -268,7 +268,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-7-3 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-7 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_cleaned_v2.csv` -> `music_preferences_and_feelings_survey_data_master_cleaned_v3.csv`
 - **Data Shape Change:** 86 (1 header row + 85 data rows) rows * 3 columns -> 46 (1 header row + 45 data rows) rows * 4 columns
@@ -306,18 +306,18 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-7-5 - V4] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-7 - V4] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_cleaned_v3.csv` -> `music_preferences_and_feelings_survey_data_master_cleaned_v4.csv`
 - **Data Shape Change:** 46 (1 header row + 45 data rows) rows * 4 columns -> 46 (1 header row + 45 data rows) rows * 5 columns
-- **Purpose:** [Primary Feeling Mapping - Python Program Execution, Map each corrected primary feeling in the [primary_feeling] column to one of the four quadrants established in Russell's Core Affect Framework]
-- **Methodology:** To provide a method for understanding the creation of feelings in comparison to sonic features extracted from Essentia, executing `primary_feeling_quadrant_mapping.py` maps each corrected primary feeling in the [primary_feeling] column to one of the four quadrants established in Russell's Core Affect Framework as described in *Applying Russell's Core Affect Framework*. Valence maps to the x-axis. Arousal maps to the y-axis. Through examining the coordinates of Valence and Arousal, emotional qualities are categorically represented within the spatial geometry of the PCA Plot.
+- **Purpose:** [Primary Feeling Mapping - Python Program Execution, Map each remaining primary feeling in the [primary_feeling] column to one of the four quadrants established in Russell's Core Affect Framework]
+- **Methodology:** To provide a method for understanding the creation of feelings in comparison to sonic features extracted from Essentia, executing `primary_feeling_quadrant_mapping.py` maps each remaining primary feeling in the [primary_feeling] column to one of the four quadrants established in Russell's Core Affect Framework as described in *Applying Russell's Core Affect Framework*. Valence maps to the x-axis. Arousal maps to the y-axis. Through examining the coordinates of Valence and Arousal, emotional qualities are categorically represented within the spatial geometry of the PCA Plot.
 
 ### Steps Executed:
 
 1. **[Addition]** Appended 1 new column, [core_affect_quadrant], to represent the categorical coordinate mapping for each corresponding primary feeling.
 
-2. **[Mapping Execution]** Executed the `primary_feeling_quadrant_mapping.py` program to assign each of the 45 corrected primary feelings in the [primary_feeling] column to one of the four quadrants in Russell's Core Affect Framework:
+2. **[Mapping Execution]** Executed `primary_feeling_quadrant_mapping.py` to assign each of the 45 remaining primary feelings in the [primary_feeling] column to one of the four quadrants in Russell's Core Affect Framework:
 
     a. Quadrant 1 (Top-Right): High Arousal + Positive Valence
 
@@ -331,9 +331,16 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-7-6 - V5] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-7 - V5] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_cleaned_v4.csv` -> `music_preferences_and_feelings_survey_data_master_cleaned_v5.csv`
-- **Data Shape Change:** 46 (1 header row + 45 data rows) rows * 5 columns -> 46 (1 header row + 45 data rows) rows * _ columns
-- **Purpose:** []
-- **Methodology:**
+- **Data Shape Change:** 46 (1 header row + 45 data rows) rows * 5 columns -> 46 (1 header row + 45 data rows) rows * 7 columns
+- **Purpose:** [Song Downloading, WAV Conversion - Python Program Execution, Download each song in the [song_name] column through the corresponding URL in the [youtube_music_url] column and convert to WAV]
+- **Methodology:** To build a standardized audio repository for sonic feature extraction from Essentia, executing `wav_file_creation.py` utilizes yt-dlp to loop through the 45 remaining data rows and obtain compressed audio streams through the verified song URLs in the [youtube_music_url] column. To enforce consistent file input for sonic feature extraction from Essentia, yt-dlp dictates the underlying FFmpeg framework to post-process and transcode the compressed audio streams into uncompressed WAV files.
+
+### Steps Executed:
+
+1. **[Addition]** Appended 2 columns to record download metadata and WAV filenames:
+    a. [song_download_status]
+    b. [wav_filename]
+2. **[Download Execution]** Executed `wav_file_creation.py` to download the compressed audio stream for each of the 45 remaining data rows from YouTube Music and convert to uncompressed WAV files.
