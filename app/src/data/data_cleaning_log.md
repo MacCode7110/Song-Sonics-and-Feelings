@@ -20,6 +20,10 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 5. V5 [Song Downloading, WAV Conversion - Python Program Execution, Download each song in the [song_name] column through the corresponding URL in the [youtube_music_url] column and convert to WAV] -> `music_preferences_and_feelings_survey_data_master_song_download.csv`
 
+6. V6 [Essentia Sonic Feature Extraction - Python Program Execution, Calculate and record 12 sonic scalar values for each of the 45 remaining data rows through accessing the WAV file referenced in the [wav_filename] column] -> `music_preferences_and_feelings_survey_data_master_sonic_feature_calculations.csv`
+
+7. V7 
+
 ## Song Release Context
 
 1. Songs are released to different audiences through the succeeding format groups:
@@ -242,7 +246,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-7-7 - V1] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-8 - V1] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_raw.csv` -> `music_preferences_and_feelings_survey_data_master_structural_base.csv`
 - **Data Shape Change:** 277 rows (2 header rows + 275 data rows) * 19 columns -> 276 (1 header row + 275 data rows) rows * 3 columns
@@ -260,7 +264,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-7-7 - V2] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-8 - V2] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_structural_base.csv` -> `music_preferences_and_feelings_survey_data_master_sampled.csv`
 - **Data Shape Change:** 276 (1 header row + 275 data rows) rows * 3 columns -> 86 (1 header row + 85 data rows) rows * 3 columns
@@ -274,7 +278,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-7-7 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-8 - V3] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_sampled.csv` -> `music_preferences_and_feelings_survey_data_master_corrected.csv`
 - **Data Shape Change:** 86 (1 header row + 85 data rows) rows * 3 columns -> 46 (1 header row + 45 data rows) rows * 4 columns
@@ -312,7 +316,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-7-7 - V4] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-8 - V4] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_corrected.csv` -> `music_preferences_and_feelings_survey_data_master_feelings_mapped.csv`
 - **Data Shape Change:** 46 (1 header row + 45 data rows) rows * 4 columns -> 46 (1 header row + 45 data rows) rows * 5 columns
@@ -337,7 +341,7 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
 
 ---
 
-## [2026-7-7 - V5] - [Matthew McAlarney - Web Developer, Data Researcher]
+## [2026-7-8 - V5] - [Matthew McAlarney - Web Developer, Data Researcher]
 
 - **Target File:** `music_preferences_and_feelings_survey_data_master_feelings_mapped.csv` -> `music_preferences_and_feelings_survey_data_master_song_download.csv`
 - **Data Shape Change:** 46 (1 header row + 45 data rows) rows * 5 columns -> 46 (1 header row + 45 data rows) rows * 7 columns
@@ -350,3 +354,19 @@ Since `music_preferences_and_feelings_survey_data_master_raw.csv` is a small dat
     a. [song_download_status]
     b. [wav_filename]
 2. **[Download Execution]** Executed `wav_file_creation.py` to download the compressed audio stream for each of the 45 remaining data rows from YouTube Music and convert to uncompressed WAV files.
+
+---
+
+## [2026-7-8 - V6] - [Matthew McAlarney - Web Developer, Data Researcher]
+
+- **Target File:** `music_preferences_and_feelings_survey_data_master_song_download.csv` -> `music_preferences_and_feelings_survey_data_master_sonic_feature_calculations.csv`
+- **Data Shape Change:** 46 (1 header row + 45 data rows) rows * 7 columns -> 46 (1 header row + 45 data rows) rows * _ columns
+- **Purpose:** [Essentia Sonic Feature Extraction - Python Program Execution, Calculate and record 12 sonic scalar values for each of the 45 remaining data rows through accessing the WAV file referenced in the [wav_filename] column]
+- **Methodology:** To 
+
+### Steps Executed:
+
+1. **[Addition]** Appended 12 columns to record sonic features extracted from Essentia:
+    a. 
+    b. 
+2. **[Sonic Feature Extraction]** Executed `sonic_feature_extraction.py` to 
