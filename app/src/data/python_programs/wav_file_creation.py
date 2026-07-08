@@ -10,6 +10,7 @@ def download_wav_files(input_csv_path, output_csv_path):
             'preferredcodec': 'wav',
             'preferredquality': '0',
         }],
+        
         'outtmpl': 'app/src/data/wav_downloads/%(title)s.%(ext)s',
         'noplaylist': True,
     }
@@ -27,11 +28,14 @@ def download_wav_files(input_csv_path, output_csv_path):
                 modified_song_url = song_url.split("&")[0] + "&audio=1"
                 try:
                     info_dict = ydl.extract_info(modified_song_url, download=False)
-                    filename = ydl.prepare_filename(info_dict)
                     
+                    if 'title' in info_dict and info_dict['title']:
+                        info_dict['title'] = info_dict['title'].lower().replace(" ", "")
+                    
+                    filename = ydl.prepare_filename(info_dict)
                     wav_path = Path(filename).with_suffix('.wav')
                     
-                    ydl.download([modified_song_url])
+                    ydl.process_info(info_dict)
                     
                     song_download_statuses.append("Success")
                     wav_filenames.append(wav_path.name)
