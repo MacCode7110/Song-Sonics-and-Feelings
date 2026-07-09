@@ -6,7 +6,7 @@ Web Developer and Data Researcher: Matthew McAlarney
 
 ## Data Collection, Cleaning, and Processing Summary
 
-The _Music Preferences And Emotions Survey_ was administered to a targeted 250 full-time employees in the United States through Survey Monkey from May 28th, 2026 - June 5th, 2026. A total of 275 survey responses from full-time employees were collected and downloaded to `survey_data_master_raw.csv`.
+The _Music Preferences And Feelings Survey_ was administered to a targeted 250 full-time employees in the United States through Survey Monkey from May 28th, 2026 - June 5th, 2026. A total of 275 survey responses from full-time employees were collected and downloaded to `survey_data_master_raw.csv`.
 
 Since `survey_data_master_raw.csv` is a small dataset and contains open-response survey data that represents human thought and writing, steps are manually executed and executed through Python programs to build the succeeding CSV files:
 
