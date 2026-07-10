@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/layout'
+import Layout from './components/Layout'
 import InteractivePCA from './pages/InteractivePCA'
 import DataMethodology from './pages/DataMethodology'
 
