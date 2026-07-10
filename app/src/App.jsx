@@ -10,9 +10,23 @@ const App = () => {
           <BrowserRouter>
                <Routes>
                     <Route path="/" element={<Layout />}>
-                         <Route index element={<Navigate to="/interactive-pca" replace />} />
-                         <Route path="interactive-pca" element={<InteractivePCAPlot />} />
-                         <Route path="data-methodology" element={<DataMethodology />} />
+                         <Route
+                              index
+                              element={
+                                   <Navigate
+                                        to="/interactive-pca"
+                                        replace
+                                   />
+                              }
+                         />
+                         <Route
+                              path="interactive-pca"
+                              element={<InteractivePCAPlot />}
+                         />
+                         <Route
+                              path="data-methodology"
+                              element={<DataMethodology />}
+                         />
                     </Route>
                </Routes>
           </BrowserRouter>
