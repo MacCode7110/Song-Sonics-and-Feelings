@@ -13,10 +13,7 @@ const ExploratoryPCAPage = () => {
                          >
                               Music Preferences and Feelings
                          </Heading>
-                         <Content
-                              size={5}
-                              className="p-5"
-                         >
+                         <Content size={5} className="p-5">
                               Examine the relationship between music
                               preferences and the construction of feelings
                               through Principle Component Analysis (PCA).
@@ -37,16 +34,13 @@ const ExploratoryPCAPage = () => {
                     <main className="box has-background-white-bis p-5 mb-3">
                          <div
                               className="is-flex is-justify-content-center is-align-items-center"
-                              style={{ minHeight: '500px' }}
+                              style={{ minHeight: '600px' }}
                          >
                               <PCA />
                          </div>
                     </main>
                     <footer className="block mb-3">
-                         <Content
-                              size={5}
-                              className="p-5"
-                         >
+                         <Content size={5} className="p-5">
                               Main Conclusions
                          </Content>
                     </footer>
