@@ -1,7 +1,7 @@
 const Heading = ({ children, size, className }) => {
-     const headingClasses = `title is-size-${size} ${className}`.trim()
+     const classes = `title is-size-${size} ${className}`.trim()
 
-     return <h1 className={headingClasses}>{children}</h1>
+     return <h1 className={classes}>{children}</h1>
 }
 
 export default Heading

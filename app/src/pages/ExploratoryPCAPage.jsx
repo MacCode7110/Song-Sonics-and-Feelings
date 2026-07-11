@@ -1,17 +1,22 @@
 import Heading from '../components/Heading'
-import TextContent from '../components/TextContent'
-import ContentAccordion from '../components/ContentAccordion'
+import Content from '../components/Content'
 import PCA from '../components/PCA'
 
 const ExploratoryPCAPage = () => {
      return (
           <section className="section">
                <div className="container">
-                    <header className="block mb-6">
-                         <Heading size={1} className="has-text-weight-bold mb-2">
+                    <header className="block mb-3">
+                         <Heading
+                              size={1}
+                              className="has-text-weight-bold mb-3"
+                         >
                               Music Preferences and Feelings
                          </Heading>
-                         <TextContent size={5}>
+                         <Content
+                              size={5}
+                              className="p-5"
+                         >
                               Examine the relationship between music
                               preferences and the construction of feelings
                               through Principle Component Analysis (PCA).
@@ -27,23 +32,23 @@ const ExploratoryPCAPage = () => {
                               panning, and tooltips to explore all the data
                               points and their corresponding song
                               attributes.
-                         </TextContent>
+                         </Content>
                     </header>
-                    <main className="box p-5 mb-6 has-background-white-bis">
+                    <main className="box has-background-white-bis p-5 mb-3">
                          <div
                               className="is-flex is-justify-content-center is-align-items-center"
-                              style={{ minHeight: '400px' }}
+                              style={{ minHeight: '500px' }}
                          >
                               <PCA />
                          </div>
                     </main>
-                    <footer className="block">
-                         <ContentAccordion title="Key Conclusion 1">
-                              <p>Key Conclusion 1</p>
-                         </ContentAccordion>
-                         <ContentAccordion title="Key Conclusion 2">
-                              <p>Key Conclusion 2</p>
-                         </ContentAccordion>
+                    <footer className="block mb-3">
+                         <Content
+                              size={5}
+                              className="p-5"
+                         >
+                              Main Conclusions
+                         </Content>
                     </footer>
                </div>
           </section>
