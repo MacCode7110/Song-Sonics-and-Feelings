@@ -9,7 +9,6 @@ const PCA = () => {
   useEffect(() => {
     if (!pcaData || pcaData.length === 0) return
 
-    // 1. Increased bottom margin from 65 to 85 to prevent label clipping
     const margin = { top: 30, right: 30, bottom: 85, left: 65 }
     const width = 960 - margin.left - margin.right
     const height = 500 - margin.top - margin.bottom
@@ -17,7 +16,6 @@ const PCA = () => {
     const svgElement = d3.select(svgRef.current)
     svgElement.selectAll('*').remove()
 
-    // 2. Removed max-height restraint to allow fluid responsive scaling
     const svg = svgElement
       .attr('viewBox', `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
       .append('g')
@@ -32,7 +30,6 @@ const PCA = () => {
     const xAxis = d3.axisBottom(xScale).ticks(8)
     const yAxis = d3.axisLeft(yScale).ticks(6)
 
-    // 3. Darkened grid lines from #ededed to #dbdbdb for contrast against white-bis
     const gridLines = svg.append('g').attr('class', 'grid-lines')
     gridLines.append('line')
       .attr('x1', xScale(0)).attr('x2', xScale(0)).attr('y1', 0).attr('y2', height)
