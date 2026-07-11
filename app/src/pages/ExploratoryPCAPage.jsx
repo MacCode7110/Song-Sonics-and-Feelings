@@ -25,8 +25,7 @@ const ExploratoryPCAPage = () => {
                               valence and arousal contribute to the
                               construction of feelings in response to
                               listening to the songs. The Exploratory PCA
-                              Plot offers dynamic features such as zooming,
-                              panning, and tooltips to explore all the data
+                              Plot offers dynamic features such as tooltips to explore all the data
                               points and their corresponding song
                               attributes.
                          </Content>
