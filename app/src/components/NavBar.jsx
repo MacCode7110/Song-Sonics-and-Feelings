@@ -10,10 +10,10 @@ const NavBar = () => {
                <div className="navbar-menu">
                     <div className="navbar-start">
                          <Link
-                              to="/interactive-pca"
+                              to="/exploratory-pca"
                               className="navbar-item"
                          >
-                              Interactive PCA
+                              Exploratory PCA
                          </Link>
                          <Link
                               to="/data-methodology"

@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
-import InteractivePCA from './pages/InteractivePCA'
-import DataMethodology from './pages/DataMethodology'
+import ExploratoryPCAPage from './pages/ExploratoryPCAPage'
+import DataMethodologyPage from './pages/DataMethodologyPage'
 import 'bulma/css/bulma.min.css'
 
 const App = () => {
@@ -14,18 +14,18 @@ const App = () => {
                               index
                               element={
                                    <Navigate
-                                        to="/interactive-pca"
+                                        to="/exploratory-pca"
                                         replace
                                    />
                               }
                          />
                          <Route
-                              path="interactive-pca"
-                              element={<InteractivePCA />}
+                              path="exploratory-pca"
+                              element={<ExploratoryPCAPage />}
                          />
                          <Route
                               path="data-methodology"
-                              element={<DataMethodology />}
+                              element={<DataMethodologyPage />}
                          />
                     </Route>
                </Routes>

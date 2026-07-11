@@ -9,7 +9,9 @@ const ContentAccordion = ({ children, title }) => {
                     className="message-header has-background-grey-dark"
                     onClick={() => setIsOpen(!isOpen)}
                >
-                    <p className="is-size-6 has-text-weight-semibold">{title}</p>
+                    <p className="is-size-6 has-text-weight-semibold">
+                         {title}
+                    </p>
                     <span>{isOpen ? '−' : '+'}</span>
                </div>
                {isOpen && (
