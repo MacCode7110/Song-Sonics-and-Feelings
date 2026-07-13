@@ -26,7 +26,7 @@ const ExploratoryPCAPage = () => {
                               Russell's Core Affect Framework is utilized
                               to understand how different types and extents
                               of valence and arousal contribute to the
-                              construction of feelings in response to
+                              formation of feelings in response to
                               listening to the songs. The Exploratory PCA
                               Plot offers dynamic interaction such as a
                               comprehensive tooltip to explore all the data

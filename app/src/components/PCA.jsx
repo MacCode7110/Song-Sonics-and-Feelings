@@ -143,7 +143,7 @@ const PCA = () => {
                .style('font-size', '14px')
                .style('fill', 'rgb(0,0,0)')
                .text(
-                    'Exploratory PCA: Musical and Emotional Qualities of Songs'
+                    'Exploratory PCA: Musical Qualities and Construction of Feelings'
                )
 
           dots.on('mouseover', function (event, d) {
