@@ -1,10 +1,16 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import pcaData from '../data/json_files/pca_matrix.json'
+import Heading from '../components/Heading'
 
 const PCA = () => {
      const svgRef = useRef(null)
-     const tooltipRef = useRef(null)
+     const [tooltip, setTooltip] = useState({
+          visible: false,
+          x: 0,
+          y: 0,
+          data: null,
+     })
 
      useEffect(() => {
           if (!pcaData || pcaData.length === 0) return
@@ -71,7 +77,7 @@ const PCA = () => {
                dotStrokeWid = 2,
                gridLineStroke = '#dddddd',
                gridLineStrokeWid = 1,
-               tooltipDisplayTime = 100
+               tooltipTransition = 100
 
           const dots = svg
                .append('g')
@@ -87,8 +93,6 @@ const PCA = () => {
                .attr('stroke', dotStroke)
                .attr('stroke-width', dotStrokeWid)
                .style('cursor', 'pointer')
-
-          const tooltip = d3.select(tooltipRef.current)
 
           gridLines
                .append('line')
@@ -116,7 +120,7 @@ const PCA = () => {
                .attr('x', pcaWidth / 2)
                .attr('y', pcaHeight + 45)
                .attr('text-anchor', 'middle')
-               .style('font-family', 'Apple Gothic')
+               .style('font-family', 'Segoe UI')
                .style('font-size', '12px')
                .style('fill', 'rgb(0,0,0)')
                .text('Principal Component 1 (PC1: Valence →)')
@@ -126,7 +130,7 @@ const PCA = () => {
                .attr('x', -pcaHeight / 2)
                .attr('y', -45)
                .attr('text-anchor', 'middle')
-               .style('font-family', 'Apple Gothic')
+               .style('font-family', 'Segoe UI')
                .style('font-size', '12px')
                .style('fill', 'rgb(0,0,0)')
                .text('Principal Component 2 (PC2: Arousal ↑)')
@@ -135,7 +139,7 @@ const PCA = () => {
                .attr('x', pcaWidth / 2)
                .attr('y', -45)
                .attr('text-anchor', 'middle')
-               .style('font-family', 'Apple Gothic')
+               .style('font-family', 'Segoe UI')
                .style('font-size', '14px')
                .style('fill', 'rgb(0,0,0)')
                .text(
@@ -145,82 +149,39 @@ const PCA = () => {
           dots.on('mouseover', function (event, d) {
                d3.select(this)
                     .transition()
-                    .duration(tooltipDisplayTime)
+                    .duration(tooltipTransition)
                     .attr('r', dotRadius)
                     .attr('fill', '#000000')
 
-               const songName = d.song_name || 'Unknown Track'
-               const artistName = d.artist_name || 'Unknown Artist'
-               const pc1 =
-                    typeof d.pca_x === 'number'
-                         ? d.pca_x.toFixed(4)
-                         : 'N/A'
-               const pc2 =
-                    typeof d.pca_y === 'number'
-                         ? d.pca_y.toFixed(4)
-                         : 'N/A'
-
-               tooltip.style('opacity', 1).html(`
-            <div class="p-4" style="min-width: 320px; max-width: 400px; font-family: sans-serif;">
-              <div class="mb-3">
-                <p class="title is-size-5 has-text-white mb-1" style="line-height: 1.2;">
-                  Song: ${songName}
-                </p>
-                <p class="subtitle is-size-6 has-text-grey-light mb-2">
-                  by Artist: ${artistName}
-                </p>
-                <div class="tags mb-0">
-                  <span class="tag is-info has-text-weight-bold">PC1: ${pc1}</span>
-                  <span class="tag is-info has-text-weight-bold">PC2: ${pc2}</span>
-                  <span class="tag is-success has-text-weight-bold">${d.primary_feeling || 'N/A'}</span>
-                  <span class="tag is-dark border-grey">${d.core_affect_quadrant || 'N/A'}</span>
-                </div>
-              </div>
-
-              <hr class="has-background-grey" style="margin: 0.75rem 0; height: 1px;" />
-
-              <div>
-                <p class="has-text-weight-semibold has-text-grey-light is-size-7 is-uppercase tracking-wide mb-2">
-                  Sonic Features
-                </p>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px;" class="is-size-7">
-                  <div><span class="has-text-grey">Scaled BPM:</span> <strong class="has-text-white float-right">${(d.scaled_bpm || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Danceability:</span> <strong class="has-text-white float-right">${(d.scaled_danceability || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Onset Rate:</span> <strong class="has-text-white float-right">${(d.scaled_onset_rate || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Loudness:</span> <strong class="has-text-white float-right">${(d.scaled_average_loudness || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Dynamics:</span> <strong class="has-text-white float-right">${(d.scaled_dynamic_complexity || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Energy:</span> <strong class="has-text-white float-right">${(d.scaled_spectral_energy || 0).toFixed(3)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Chords Rate:</span> <strong class="has-text-white float-right">${(d.scaled_chords_changes_rate || 0).toFixed(3)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Pitch Salience:</span> <strong class="has-text-white float-right">${(d.scaled_pitch_salience || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Complexity:</span> <strong class="has-text-white float-right">${(d.scaled_spectral_complexity || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Centroid:</span> <strong class="has-text-white float-right">${(d.scaled_spectral_centroid || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Flatness:</span> <strong class="has-text-white float-right">${(d.scaled_barkbands_flatness_db || 0).toFixed(2)}</strong></div>
-                  <div><span class="has-text-grey">Scaled Zero Cross:</span> <strong class="has-text-white float-right">${(d.scaled_zerocrossingrate || d.scaled_zero_crossing_rate || 0).toFixed(2)}</strong></div>
-                </div>
-              </div>
-            </div>
-          `)
+               setTooltip({
+                    visible: true,
+                    x: event.layerX + 25,
+                    y: event.layerY - 25,
+                    data: d,
+               })
           })
                .on('mousemove', function (event) {
-                    tooltip
-                         .style('left', event.layerX + 15 + 'px')
-                         .style('top', event.layerY - 15 + 'px')
+                    setTooltip((t) => ({
+                         ...t,
+                         x: event.layerX + 25,
+                         y: event.layerY - 25,
+                    }))
                })
                .on('mouseleave', function () {
                     d3.select(this)
                          .transition()
-                         .duration(tooltipDisplayTime)
+                         .duration(tooltipTransition)
                          .attr('r', dotRadius)
                          .attr('fill', (d) =>
                               colorScale(d.core_affect_quadrant)
                          )
-                    tooltip.style('opacity', 0)
+
+                    setTooltip((t) => ({ ...t, visible: false }))
                })
      }, [])
 
      return (
           <div
-               className="has-background-white-bis"
                style={{
                     position: 'relative',
                     width: '100%',
@@ -236,20 +197,191 @@ const PCA = () => {
                          display: 'block',
                     }}
                ></svg>
-               <div
-                    ref={tooltipRef}
-                    className="box p-0 has-background-black"
-                    style={{
-                         position: 'absolute',
-                         pointerEvents: 'none',
-                         opacity: 0,
-                         transition: 'opacity 0.15s ease',
-                         zIndex: 100,
-                         borderRadius: '5px',
-                         boxShadow: '0 5px 25px rgb(0, 0, 0)',
-                         border: '1px solid rgb(0,0,0)',
-                    }}
-               />
+               {tooltip.visible && tooltip.data && (
+                    <div
+                         className="box has-background-success-light p-5"
+                         style={{
+                              position: 'absolute',
+                              left: `${tooltip.x}px`,
+                              top: `${tooltip.y}px`,
+                              pointerEvents: 'none',
+                              zIndex: 100,
+                              minWidth: '250px',
+                              maxWidth: '500px',
+                              borderRadius: '5px',
+                         }}
+                    >
+                         <p
+                              className="is-family-secondary has-text-grey-dark has-text-weight-bold is-size-5 mb-3"
+                         >
+                              {tooltip.data.song_name} by{' '}
+                              {tooltip.data.artist_name}
+                         </p>
+                         <div className="columns is-gapless is-size-7">
+                              <div className="column">
+                                   <ul>
+                                        {[
+                                             {
+                                                  key: 'pca_x',
+                                                  label: 'PC1',
+                                                  isFloat: true,
+                                                  digitCount: 4,
+                                             },
+                                             {
+                                                  key: 'pca_y',
+                                                  label: 'PC2',
+                                                  isFloat: true,
+                                                  digitCount: 4,
+                                             },
+                                             {
+                                                  key: 'primary_feeling',
+                                                  label: 'Primary Feeling',
+                                                  isFloat: true,
+                                                  digitCount: 0,
+                                             },
+                                             {
+                                                  key: 'core_affect_quadrant',
+                                                  label: 'Core Affect Quadrant',
+                                                  isFloat: false,
+                                                  digitCount: 0,
+                                             },
+                                             {
+                                                  key: 'scaled_bpm',
+                                                  label: 'Scaled BPM',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                             {
+                                                  key: 'scaled_danceability',
+                                                  label: 'Scaled Danceability',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                             {
+                                                  key: 'scaled_onset_rate',
+                                                  label: 'Scaled Onset Rate',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                             {
+                                                  key: 'scaled_average_loudness',
+                                                  label: 'Scaled Average Loudness',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                        ].map((item) => {
+                                             const rawValue =
+                                                  tooltip.data[item.key]
+                                             const formattedValue =
+                                                  item.isFloat &&
+                                                  typeof rawValue ===
+                                                       'number'
+                                                       ? rawValue.toFixed(
+                                                              item.digitCount
+                                                         )
+                                                       : rawValue || 'NA'
+
+                                             return (
+                                                  <li
+                                                       key={item.key}
+                                                       className="mb-1"
+                                                  >
+                                                       <span className="has-text-grey-dark">
+                                                            {item.label}:
+                                                       </span>{' '}
+                                                       <strong className="has-text-black-ter">
+                                                            {
+                                                                 formattedValue
+                                                            }
+                                                       </strong>
+                                                  </li>
+                                             )
+                                        })}
+                                   </ul>
+                              </div>
+                              <div className="column">
+                                   <ul>
+                                        {[
+                                            {
+                                                  key: 'scaled_dynamic_complexity',
+                                                  label: 'Scaled Dynamic Complexity',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                             {
+                                                  key: 'scaled_spectral_energy',
+                                                  label: 'Scaled Spectral Energy',
+                                                  isFloat: true,
+                                                  digitCount: 3,
+                                             },
+                                             {
+                                                  key: 'scaled_chords_changes_rate',
+                                                  label: 'Scaled Chords Changes Rate',
+                                                  isFloat: true,
+                                                  digitCount: 3,
+                                             },
+                                             {
+                                                  key: 'scaled_pitch_salience',
+                                                  label: 'Scaled Pitch Salience',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                             {
+                                                  key: 'scaled_spectral_complexity',
+                                                  label: 'Scaled Spectral Complexity',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                             {
+                                                  key: 'scaled_spectral_centroid',
+                                                  label: 'Scaled Spectral Centroid',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                             {
+                                                  key: 'scaled_barkbands_flatness_db',
+                                                  label: 'Scaled Barkbands Flatness DB',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                             {
+                                                  key: 'scaled_zerocrossingrate',
+                                                  label: 'Scaled Zero Crossing Rate',
+                                                  isFloat: true,
+                                                  digitCount: 2,
+                                             },
+                                        ].map((item) => {
+                                             const rawValue =
+                                                  tooltip.data[item.key]
+                                             const formattedValue =
+                                                  item.isFloat &&
+                                                  typeof rawValue ===
+                                                       'number'
+                                                       ? rawValue.toFixed(
+                                                              item.digitCount
+                                                         )
+                                                       : rawValue || 'NA'
+                                             return (
+                                                  <li
+                                                       key={item.key}
+                                                       className="mb-1"
+                                                  >
+                                                       <span className="has-text-grey-dark">
+                                                            {item.label}:
+                                                       </span>{' '}
+                                                       <strong className="has-text-black-ter">
+                                                            {
+                                                                 formattedValue
+                                                            }
+                                                       </strong>
+                                                  </li>
+                                             )
+                                        })}
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+               )}
           </div>
      )
 }

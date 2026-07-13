@@ -1,4 +1,4 @@
-# Data Cleaning Log
+# Data Methodology Log
 
 Web Developer, Data Researcher, Scratch DJ, Rapper: Matthew McAlarney
 

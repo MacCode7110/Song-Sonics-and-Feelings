@@ -11,13 +11,13 @@ const NavBar = () => {
                     <div className="navbar-start">
                          <Link
                               to="/exploratory-pca"
-                              className="navbar-item has-text-black"
+                              className="navbar-item is-family-secondary has-text-black"
                          >
                               Exploratory PCA
                          </Link>
                          <Link
                               to="/data-methodology"
-                              className="navbar-item has-text-black"
+                              className="navbar-item is-family-secondary has-text-black"
                          >
                               Data Methodology
                          </Link>
