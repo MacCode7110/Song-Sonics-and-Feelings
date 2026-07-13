@@ -22,14 +22,14 @@ const ExploratoryPCAPage = () => {
                               through Principle Component Analysis (PCA).
                               The Exploratory PCA Plot visualizes how
                               different songs cluster according to similar
-                              scaled sonic and emotional characteristics.
-                              Russell's Core Affect Framework is utilized
+                              scaled sonic and emotional characteristics. 12 unique scaled sonic values are processed to build the PCA coordinates for each song.
+                              Additionally, Russell's Core Affect Framework is leveraged
                               to understand how different types and extents
                               of valence and arousal contribute to the
                               formation of feelings in response to
-                              listening to the songs. The Exploratory PCA
+                              listening to each song. The Exploratory PCA
                               Plot offers dynamic interaction such as a
-                              comprehensive tooltip to explore all the data
+                              comprehensive tooltip to explore all data
                               points and their corresponding song
                               attributes. Russell's Core Affect Framework
                               maps each primary feeling into one of four
