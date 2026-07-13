@@ -29,7 +29,7 @@ const ExploratoryPCAPage = () => {
                               comprehensive tooltip to explore all the data
                               points and their corresponding song
                               attributes. Russell's Core Affect Framework
-                              maps each feeling into one of four
+                              maps each primary feeling into one of four
                               neurophysiological quadrants depending on the
                               particular manifestation of valence and
                               arousal. Each quadrant is color-coded as{' '}
@@ -62,7 +62,7 @@ const ExploratoryPCAPage = () => {
                          </div>
                     </main>
                     <footer className="block mb-3">
-                         <Content size={5} className="p-5">
+                         <Content size={5} className="is-family-secondary has-text-black p-5">
                               Main Conclusions
                          </Content>
                     </footer>
