@@ -54,7 +54,7 @@ const PCA = () => {
     const colorScale = d3.scaleOrdinal().domain(coreAffectBins).range(colors)
 
     const dotRad = 8,
-      gridLineStro = '#ffffff',
+      gridLineStro = 'rgb(128, 128, 128)',
       gridLineStroWid = 1,
       tooltipTran = 100,
       textFon = 'Segoe UI',
@@ -173,7 +173,7 @@ const PCA = () => {
 
     dots
       .on('mouseover', function (event, d) {
-        d3.select(this).transition().duration(tooltipTran).attr('r', dotRad).attr('fill', '#000000')
+        d3.select(this).transition().duration(tooltipTran).attr('r', dotRad).attr('fill', 'rgb(128, 128, 128)')
 
         setTooltip({
           visible: true,
