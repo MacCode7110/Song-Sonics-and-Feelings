@@ -28,6 +28,10 @@ const PCA = () => {
     const pcaWid = boxWid - margin.left - margin.right
     const pcaHei = boxHei - margin.top - margin.bottom
 
+    const dotRad = 8,
+      primaryCol = 'rgb(0,0,0)',
+      secondaryCol = 'rgb(64, 70, 84)'
+
     const svgElem = d3.select(svgRef.current)
     svgElem.selectAll('*').remove()
 
@@ -53,14 +57,6 @@ const PCA = () => {
 
     const colorScale = d3.scaleOrdinal().domain(coreAffectBins).range(colors)
 
-    const dotRad = 8,
-      gridLineStro = 'rgb(128, 128, 128)',
-      gridLineStroWid = 1,
-      tooltipTran = 100,
-      textFon = 'Segoe UI',
-      textCol = 'rgb(0,0,0)',
-      textAnch = 'middle'
-
     const dots = svg
       .append('g')
       .selectAll('circle')
@@ -76,34 +72,28 @@ const PCA = () => {
       .attr('stroke-width', 2)
       .style('cursor', 'pointer')
 
-    gridLines
-      .append('line')
-      .attr('x1', xScale(0))
-      .attr('x2', xScale(0))
-      .attr('y1', 0)
-      .attr('y2', pcaHei)
-      .attr('stroke', gridLineStro)
-      .attr('stroke-width', gridLineStroWid)
-    gridLines
-      .append('line')
-      .attr('x1', 0)
-      .attr('x2', pcaWid)
-      .attr('y1', yScale(0))
-      .attr('y2', yScale(0))
-      .attr('stroke', gridLineStro)
-      .attr('stroke-width', gridLineStroWid)
-
-    svg.append('g').attr('transform', `translate(0,${pcaHei})`).call(xAxis)
-    svg.append('g').call(yAxis)
+    svg
+      .append('g')
+      .attr('transform', `translate(0,${pcaHei})`)
+      .call(xAxis)
+      .call((g) => g.select('.domain').attr('stroke', primaryCol).attr('stroke-width', 1))
+      .call((g) => g.selectAll('.tick line').attr('stroke', primaryCol))
+      .call((g) => g.selectAll('.tick text').attr('fill', primaryCol))
+    svg
+      .append('g')
+      .call(yAxis)
+      .call((g) => g.select('.domain').attr('stroke', primaryCol).attr('stroke-width', 1))
+      .call((g) => g.selectAll('.tick line').attr('stroke', primaryCol))
+      .call((g) => g.selectAll('.tick text').attr('fill', primaryCol))
 
     svg
       .append('text')
       .attr('x', pcaWid / 2)
       .attr('y', pcaHei + 45)
-      .attr('text-anchor', textAnch)
-      .style('font-family', textFon)
+      .attr('text-anchor', 'middle')
+      .style('font-family', 'Segoe UI')
       .style('font-size', '12px')
-      .style('fill', textCol)
+      .style('fill', primaryCol)
       .style('font-weight', 'bold')
       .text('Principal Component 1 (PC1: Valence →)')
 
@@ -112,10 +102,10 @@ const PCA = () => {
       .attr('transform', 'rotate(-90)')
       .attr('x', -pcaHei / 2)
       .attr('y', -45)
-      .attr('text-anchor', textAnch)
-      .style('font-family', textFon)
+      .attr('text-anchor', 'middle')
+      .style('font-family', 'Segoe UI')
       .style('font-size', '12px')
-      .style('fill', textCol)
+      .style('fill', primaryCol)
       .style('font-weight', 'bold')
       .text('Principal Component 2 (PC2: Arousal ↑)')
 
@@ -123,12 +113,31 @@ const PCA = () => {
       .append('text')
       .attr('x', pcaWid / 2)
       .attr('y', -45)
-      .attr('text-anchor', textAnch)
-      .style('font-family', textFon)
+      .attr('text-anchor', 'middle')
+      .style('font-family', 'Segoe UI')
       .style('font-size', '14px')
-      .style('fill', textCol)
+      .style('fill', primaryCol)
       .style('font-weight', 'bold')
       .text('Exploratory PCA: Musical Qualities and Construction of Feelings')
+
+    gridLines
+      .append('line')
+      .attr('x1', xScale(0))
+      .attr('x2', xScale(0))
+      .attr('y1', 0)
+      .attr('y2', pcaHei)
+      .attr('opacity', 0.4)
+      .attr('stroke', secondaryCol)
+      .attr('stroke-width', 1)
+    gridLines
+      .append('line')
+      .attr('x1', 0)
+      .attr('x2', pcaWid)
+      .attr('y1', yScale(0))
+      .attr('y2', yScale(0))
+      .attr('opacity', 0.4)
+      .attr('stroke', secondaryCol)
+      .attr('stroke-width', 1)
 
     const coreAffectAreas = [
       {
@@ -162,10 +171,10 @@ const PCA = () => {
         .append('text')
         .attr('x', q.x)
         .attr('y', q.y)
-        .attr('opacity', 0.4)
-        .attr('text-anchor', textAnch)
-        .style('font-family', textFon)
+        .attr('text-anchor', 'middle')
+        .style('font-family', 'Segoe UI')
         .style('font-size', '12px')
+        .attr('opacity', 0.4)
         .style('fill', q.color)
         .style('pointer-events', 'none')
         .text(q.descrip)
@@ -173,7 +182,7 @@ const PCA = () => {
 
     dots
       .on('mouseover', function (event, d) {
-        d3.select(this).transition().duration(tooltipTran).attr('r', dotRad).attr('fill', 'rgb(128, 128, 128)')
+        d3.select(this).transition().duration(100).attr('r', dotRad).attr('fill', primaryCol)
 
         setTooltip({
           visible: true,
@@ -192,7 +201,7 @@ const PCA = () => {
       .on('mouseleave', function () {
         d3.select(this)
           .transition()
-          .duration(tooltipTran)
+          .duration(100)
           .attr('r', dotRad)
           .attr('fill', (d) => colorScale(d.core_affect_quadrant))
 
@@ -205,9 +214,7 @@ const PCA = () => {
 
   const getStructuredData = (lisItem) => {
     const rawVal = tooltip.data[lisItem.key]
-    return lisItem.isFloat && typeof rawVal === 'number'
-      ? rawVal.toFixed(lisItem.digCount)
-      : rawVal
+    return lisItem.isFloat && typeof rawVal === 'number' ? rawVal.toFixed(lisItem.digCount) : rawVal
   }
 
   const StructuredListItem = ({ lisItem, structuredVal }) => {
