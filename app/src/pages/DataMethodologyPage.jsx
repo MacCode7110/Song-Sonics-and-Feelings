@@ -21,10 +21,10 @@ const DataMethodologyPage = () => {
             <span className="is-italic">
               <span className="is-italic">Russell's Core Affect Framework</span>
             </span>{' '}
-            were utilized to build <span className="is-italic">Exploratory PCA: Musical Qualities and Construction of Feelings</span>. The 275 survey responses stored in{' '}
+            were utilized to build <span className="is-italic">Exploratory PCA: Musical Qualities and Mapping of Feelings</span>. The 275 survey responses stored in{' '}
             <span className="is-italic">survey_data_master_raw.csv</span> proceeded through 8 unique cleaning and processing phases to build the output file{' '}
             <span className="is-italic">pca_matrix.json</span>. The corrected survey writing, PCA coordinates, and scaled sonic values stored in <span className="is-italic">pca_matrix.json</span> are
-            presented through <span className="is-italic">Exploratory PCA: Musical Qualities and Construction of Feelings</span>.
+            presented through <span className="is-italic">Exploratory PCA: Musical Qualities and Mapping of Feelings</span>.
           </Content>
         </header>
         <main className="block mb-1">
