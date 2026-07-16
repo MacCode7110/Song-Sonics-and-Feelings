@@ -11,7 +11,7 @@ const ExploratoryPCAPage = () => {
             Music Preferences and Feelings
           </Heading>
           <Content size={5} className="is-family-secondary has-text-black p-5">
-            Examine the relationship between musical qualities and the mapping of feelings through <span className="is-italic">Principal Component Analysis (PCA)</span>. The{' '}
+            Examine the relationship between sonic qualities and the mapping of feelings through <span className="is-italic">Principal Component Analysis (PCA)</span>. The{' '}
             <span className="is-italic">Exploratory PCA</span> visualizes how different songs cluster according to linear combinations of similar scaled sonic values. Twelve unique scaled sonic values
             are processed to build the <span className="is-italic">PCA</span> coordinates for each song. The twelve scaled sonic features represented in the <span className="is-italic">PCA</span> are{' '}
             <span className="is-italic">scaled_bpm</span>, <span className="is-italic">scaled_danceability</span>, <span className="is-italic">scaled_onset_rate</span>,{' '}
