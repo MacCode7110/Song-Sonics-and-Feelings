@@ -102,9 +102,9 @@ Since `survey_data_master_raw.csv` is a small dataset and contains open-response
 
 * **UI Wireframe Designs:** UI wireframes were designed for the Exploratory PCA and Data Methodology rendered in the **Song Sonics & Feelings** web application. The UI wireframes provided a general arrangement for the React components rendered in the **Song Sonics & Feelings** web application.
 
-* ![Exploratory PCA Wireframe](./wireframes/ExploratoryPCAUIWireframe.png)
+![Exploratory PCA Wireframe](./wireframes/ExploratoryPCAUIWireframe.png)
 
-* ![Data Methodology Wireframe](./wireframes/DataMethodologyUIWireframe.png)
+![Data Methodology Wireframe](./wireframes/DataMethodologyUIWireframe.png)
 
 * **Complexity Consideration:** Since the *Song Preference & Feeling Survey* was administered during a finite period to collect the *song_name*, *artist_name*, and *primary_feeling* data rendered through the *PCA*, *pca_matrix.json* functions as a static dataset. CSV files are exclusively built to move the data through different cleaning and processing phases. HTTP requests to external APIs are not required to obtain sonic features for each song. As a result, the **Song Sonics & Feelings** web application completely avoids consuming uneeded network bandwidth.
 
