@@ -10,17 +10,17 @@ const DataMethodologyPage = () => {
             Data Methodology
           </Heading>
           <Content size={5} className="is-family-secondary has-text-black p-5">
-            The <span className="is-italic">Song Sonics and Emotions Survey</span> was administered to a targeted 250 full-time employees in the United States through SurveyMonkey distribution
-            panels from May 28th, 2026 to June 5th, 2026. The <span className="is-italic">Song Sonics and Emotions Survey</span> also required each respondent to answer two questions: (1) What
+            The <span className="is-italic">Song Sonics & Feelings Survey</span> was administered to a targeted 250 full-time employees in the United States through SurveyMonkey distribution
+            panels from May 28th, 2026 to June 5th, 2026. The <span className="is-italic">Song Sonics & Feelings Survey</span> also required each respondent to answer two questions: (1) What
             is your favorite song? Please enter (1) the song name and (2) the corresponding artist name. Please use correct spelling. (2) What is the primary feeling that your favorite song creates
             within you? Please enter only one feeling and use correct spelling. A total of 275 survey responses were collected and stored in{' '}
             <span className="is-italic">survey_data_master_raw.csv</span>. <span className="is-italic">JavaScript</span>, <span className="is-italic">React</span>,{' '}
             <span className="is-italic">D3</span>, <span className="is-italic">Python</span>, <span className="is-italic">Pandas</span>, <span className="is-italic">yt-dlp</span>,{' '}
             <span className="is-italic">FFmpeg</span>, <span className="is-italic">WAV</span>, <span className="is-italic">Essentia Audio Analysis</span>,{' '}
             <span className="is-italic">PCA (Principal Component Analysis)</span>, and <span className="is-italic">Russell's Core Affect Framework</span> were utilized to build{' '}
-            <span className="is-italic">Exploratory PCA: Mapping Song Sonics and Emotions</span>. The 275 survey responses stored in <span className="is-italic">survey_data_master_raw.csv</span>{' '}
+            <span className="is-italic">Exploratory PCA: Mapping Song Sonics & Feelings</span>. The 275 survey responses stored in <span className="is-italic">survey_data_master_raw.csv</span>{' '}
             proceeded through 8 unique cleaning and processing phases to build the output file <span className="is-italic">pca_matrix.json</span>. The corrected survey writing, PCA coordinates, and
-            scaled sonic values stored in <span className="is-italic">pca_matrix.json</span> are presented through <span className="is-italic">Exploratory PCA: Mapping Song Sonics and Emotions</span>.
+            scaled sonic values stored in <span className="is-italic">pca_matrix.json</span> are presented through <span className="is-italic">Exploratory PCA: Mapping Song Sonics & Feelings</span>.
           </Content>
         </header>
         <main className="block mb-1">

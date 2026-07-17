@@ -248,7 +248,7 @@ const PCA = () => {
   return (
     <Container>
       <Heading size={3} className="is-family-secondary has-text-weight-normal is-italic has-text-centered mb-3">
-        Exploratory PCA: Mapping Song Sonics and Emotions
+        Exploratory PCA: Mapping Song Sonics & Feelings
       </Heading>
       <SVG ref={svgRef} />
       {tooltip.visible && tooltip.data && (

@@ -8,7 +8,7 @@ const ExploratoryPCAPage = () => {
       <div className="container">
         <header className="block mb-3">
           <Heading size={1} className="is-family-primary has-text-black">
-            Song Sonics and Emotions
+            Song Sonics & Feelings
           </Heading>
           <Content size={5} className="is-family-secondary has-text-black p-5">
             Examine the relationship between song sonics and the mapping of feelings through <span className="is-italic">Principal Component Analysis (PCA)</span>. The{' '}
