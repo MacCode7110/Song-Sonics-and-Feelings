@@ -2,7 +2,7 @@
 
 **Web Developer, Data Researcher, Scratch DJ, Rapper:** Matthew McAlarney
 
-**Technologies:** Python, Pandas, yt-dlp, FFmpeg, WAV, Essentia Audio Analysis, PCA (Principal Component Analysis), Russell's Core Affect Framework
+**Technologies:** JavaScript, React, Bulma CSS, D3, Python, Pandas, yt-dlp, FFmpeg, WAV, Essentia Audio Analysis, PCA (Principal Component Analysis), Russell's Core Affect Framework
 
 **Web Application Link:** https://song-sonics-and-feelings.vercel.app/exploratory-pca
 
