@@ -7,7 +7,7 @@
 ## Overview and Motivation
 The **Song Sonics & Feelings** web application was constructed to examine the relationship between song sonics and the mapping of feelings to parametric neurophysiological foundations.
 
-The motivation to develop **Song Sonics & Feelings** was to understand the connection between the sonic qualities of songs and the resulting primary feeling of listeners. Through processing sonic features and mathematically clustering songs within a neurophysiological framework, a *PCA* instance illustrates the level of consistency in which linear combinations of sonic values accurately predict the resulting primary feeling of listeners.
+The motivation to develop **Song Sonics & Feelings** was to understand the connection between the sonic qualities of songs and the resulting primary feeling of respondents. Through processing sonic features and mathematically clustering songs within a neurophysiological framework, a *PCA* instance illustrates the level of consistency in which linear combinations of sonic values accurately predict the resulting primary feeling of respondents.
 
 ## Related Work
 1. **Music Information Retrieval (MIR):** Implementing computational analysis to extract meaningful features from audio signals such as tempo, loudness, and spectral complexity.
@@ -17,7 +17,7 @@ The motivation to develop **Song Sonics & Feelings** was to understand the conne
 
 ## Research Questions
 * How do scalar sonic features such as `bpm`, `danceability`, and `onset_rate` cluster songs together in a *PCA*?
-* To what extent do linear combinations of song sonics accurately predict the classification of the listener's primary feeling through *Russell's Core Affect Framework*?
+* To what extent do linear combinations of song sonics accurately predict the classification of the respondent's primary feeling through *Russell's Core Affect Framework*?
 * Why do certain songs such as *My Sacrifice* by *Creed* mathematically cluster in one quadrant according to *PCA* coordinates, yet evoke primary feelings mapping to a different quadrant through *Russell's Core Affect Framework*?
 
 ## Data Sources and Processing
@@ -62,7 +62,7 @@ This highlights that human emotional response to music is not purely a product o
 ## Limitations
 * **Sample Size & Diversity:** The current dataset represents a curated subset of songs and user responses.
 * **Linear Assumptions:** PCA is a linear dimensionality reduction technique; it may miss complex, non-linear relationships between certain sonic elements.
-* **Subjectivity of Feelings:** Emotional mapping relies on self-reported "Primary Feelings" which vary heavily across different listener demographics.
+* **Subjectivity of Feelings:** Emotional mapping relies on self-reported "Primary Feelings" which vary heavily across different respondent demographics.
 
 ## Future Work
 * **Expanding the Dataset:** Incorporating a broader catalog of genres, tempos, and global music styles.
