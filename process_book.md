@@ -126,11 +126,10 @@ Considering the complete set of songs presented in the PCA, approximately 68.8% 
 
 ---
 
-## Future Work //
+## Future Work
 
-* **Expanding the Dataset:** Incorporating a broader catalog of genres, tempos, and global music styles.
-* **Non-linear Embeddings:** Experimenting with t-SNE or UMAP to see if non-linear dimensionality reduction yields more emotionally cohesive spatial clusters.
-* **Interactive Surveying:** Allowing live users to input their own emotional responses to songs and dynamically updating the database to see how emotional consensus shifts.
+* **Cleaning and Processing a Greater Dataset:** As detailed in *data_methodology_log.md*, a simple random sampling method was applied to randomly select 85 songs from the total 275 songs collected through the *Song Preference & Feeling Survey*. All cleaning and processing phases are applicable to the remaining 190 songs. There is some probability that a greater number of *PC1* and *PC2* coordinates can be added to *Exploratory PCA: Mapping Song Sonics & Feelings*.
+* **Implementing Non-linear Visualizations:** Implementing a UMAP may reveal whether non-linear dimensionality reduction illustrates distinct song clusters.
 
 ---
 
