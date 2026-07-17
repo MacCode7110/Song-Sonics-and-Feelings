@@ -137,7 +137,8 @@ Considering the complete set of songs presented in the *PCA*, approximately 68.8
 
 ---
 
-## References
+## APA References
 
-* Russell, J. A. (2003). Core affect and the psychological construction of emotion. Psychological Review.
-* Bogdanov, D., et al. (2013). *Essentia: An audio analysis library for music information retrieval.* ISMIR.
+* IBM. (n.d.). What is principal component analysis (PCA)? Retrieved July 17, 2026, from https://www.ibm.com/think/topics/principal-component-analysis
+* Russell, J. A. (2003). Core affect and the psychological construction of emotion. Psychological Review, 110(1), 145–172. https://doi.org/10.1037/0033-295X.110.1.145
+* Bogdanov, D., Wack, N., Gómez, E., Gulati, S., Herrera, P., Mayor, O., Roma, G., Salamon, J., Zapata, J., & Serra, X. (2013). ESSENTIA: An open-source library for sound and music analysis. In Proceedings of the 21st ACM International Conference on Multimedia (pp. 855–858). https://doi.org/10.1145/2502081.2502229
